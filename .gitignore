@@ -1,0 +1,51 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Bootstrap Studio Files
+*.bsdesign
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary Files
+*.tmp
+*.temp
+.cache/
+
+# Build outputs (if any)
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Node modules (if you add any)
+node_modules/
+
+# Package manager files (optional)
+package-lock.json
+yarn.lock
