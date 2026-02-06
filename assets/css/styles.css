@@ -9,8 +9,8 @@ body {
 .navbar {
   background: rgba(241, 242, 244, 0.8);
   border-bottom: 1px solid #dfe3e7 ;
-  backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
 }
 
 .hero-content {
