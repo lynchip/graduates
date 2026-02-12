@@ -49,3 +49,10 @@ node_modules/
 # Package manager files (optional)
 package-lock.json
 yarn.lock
+
+# Documentation and workflow files (not for production)
+DNS-SETUP-INSTRUCTIONS.md
+GIT-WORKFLOW-GUIDE.md
+IMPROVEMENTS.md
+AUDIT.md
+agent.md
