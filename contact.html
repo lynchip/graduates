@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato para agendar sua consulta gratuita">
+    <title>Contato - Michael | Inglês Executivo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <span class="brand-name">Michael | Inglês Executivo</span>
+                <span class="brand-tagline">English Teacher</span>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Início</a></li>
+                <li><a href="index.html#about" class="nav-link">Sobre</a></li>
+                <li><a href="index.html#services" class="nav-link">Serviços</a></li>
+                <li><a href="index.html#why-choose" class="nav-link">Diferenciais</a></li>
+                <li><a href="index.html#testimonials" class="nav-link">Depoimentos</a></li>
+                <li><a href="index.html#pricing" class="nav-link">Preços</a></li>
+                <li><a href="contact.html" class="nav-link nav-link-cta">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Início</a>
+                <span>/</span>
+                <span>Contato</span>
+            </div>
+            <h1 class="page-title">Entre em Contato</h1>
+            <p class="page-subtitle">
+                Preencha o formulário abaixo ou entre em contato via WhatsApp.<br>
+                Responderei o mais breve possível!
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Vamos Conversar?</h2>
+                    <p class="contact-intro">
+                        Agende sua <strong>consulta gratuita</strong> e descubra como
+                        minhas aulas podem acelerar sua carreira.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>WhatsApp</h3>
+                                <p>Resposta rápida e direta</p>
+                                <a href="https://wa.me/5511996005326?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20inglês."
+                                    target="_blank">
+                                    (11) 99600-5326
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Localização</h3>
+                                <p>São Paulo, Brasil</p>
+                                <span>Aulas 100% Online</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Horário de Atendimento</h3>
+                                <p>Segunda a Sábado</p>
+                                <span>Horários flexíveis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <a href="https://wa.me/5511996005326?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20inglês."
+                            class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="contact-features">
+                        <div class="feature-badge">
+                            <i class="fas fa-gift"></i>
+                            <span>Consulta Gratuita</span>
+                        </div>
+                        <div class="feature-badge">
+                            <i class="fas fa-reply"></i>
+                            <span>Resposta em 24h</span>
+                        </div>
+                        <div class="feature-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Sem Compromisso</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h2>Agendar Consulta Gratuita</h2>
+                        <p>Preencha o formulário e entraremos em contato</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="757b7027-29ac-44dc-9dca-711e27457dc9">
+                        <input type="hidden" name="subject" value="Novo Contato - Michael | Inglês Executivo">
+                        <input type="hidden" name="from_name" value="Michael | Inglês Executivo">
+                        <!-- Redirect to confirmed.html after submission -->
+                        <input type="hidden" name="redirect" value="confirmed.html">
+                        <!-- Botcheck -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <div class="form-group">
+                            <label for="name">
+                                Nome Completo <span class="required">*</span>
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">
+                                    Email <span class="required">*</span>
+                                </label>
+                                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">
+                                    Telefone/WhatsApp <span class="required">*</span>
+                                </label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(11) 99999-9999">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="profession">
+                                Profissão / Área de Atuação <span class="required">*</span>
+                            </label>
+                            <input type="text" id="profession" name="profession" required
+                                placeholder="Ex: Gerente de TI, Desenvolvedor, Analista...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="level">
+                                Nível de Inglês Atual <span class="required">*</span>
+                            </label>
+                            <select id="level" name="level" required>
+                                <option value="">Selecione seu nível</option>
+                                <option value="Básico">Básico (A1-A2)</option>
+                                <option value="Intermediário">Intermediário (B1-B2)</option>
+                                <option value="Avançado">Avançado (C1-C2)</option>
+                                <option value="Não sei">Não sei / Gostaria de avaliar</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">
+                                Interesse Principal <span class="required">*</span>
+                            </label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="Inglês Corporativo">Inglês Corporativo</option>
+                                <option value="Inglês para TI & Tech">Inglês para TI & Tech</option>
+                                <option value="Conversação Avançada">Conversação Avançada</option>
+                                <option value="Preparação para Exames">Preparação para Exames</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                Mensagem / Objetivos
+                            </label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Conte um pouco sobre seus objetivos com o inglês..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="availability">
+                                Preferência de Horário
+                            </label>
+                            <select id="availability" name="availability">
+                                <option value="">Selecione uma opção</option>
+                                <option value="Manhã (6h-12h)">Manhã (6h-12h)</option>
+                                <option value="Tarde (12h-18h)">Tarde (12h-18h)</option>
+                                <option value="Noite (18h-22h)">Noite (18h-22h)</option>
+                                <option value="Fim de semana">Fim de semana</option>
+                                <option value="Flexível">Flexível</option>
+                            </select>
+                        </div>
+
+                        <div class="form-footer">
+                            <p class="form-note">
+                                <i class="fas fa-info-circle"></i>
+                                Ao enviar, seus dados serão encaminhados via WhatsApp
+                            </p>
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Solicitação
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="formSuccess" class="form-message success" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Mensagem Enviada!</h3>
+                        <p>Obrigado pelo contato. Retornarei em breve!</p>
+                    </div>
+
+                    <div id="formError" class="form-message error" style="display: none;">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <h3>Erro ao Enviar</h3>
+                        <p>Por favor, tente novamente ou entre em contato via WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas Frequentes</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Como funciona a consulta gratuita?</h3>
+                    <p>É uma conversa de 30-40 minutos onde avalio seu nível, entendo seus objetivos e apresento a
+                        metodologia. Sem compromisso!</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> As aulas são ao vivo?</h3>
+                    <p>Sim! Todas as aulas são ao vivo via Zoom/Google Meet, 100% personalizadas e interativas.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Preciso de material didático?</h3>
+                    <p>Não! Eu forneço todo o material necessário, personalizado para seus objetivos.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Posso cancelar ou remarcar aulas?</h3>
+                    <p>Sim! Basta avisar com 24h de antecedência e remarcamos sem problemas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Michael | Inglês Executivo</h3>
+                    <p>Professor de Inglês Online<br>São Paulo, Brasil</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="index.html#about">Sobre</a></li>
+                        <li><a href="index.html#services">Serviços</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/5511996005326" target="_blank">(11) 99600-5326</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Michael | Inglês Executivo. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5511996005326?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20inglês."
+        class="whatsapp-float" target="_blank" aria-label="Contato via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mensagem enviada com sucesso">
+    <title>Mensagem Enviada - Michael | Inglês Executivo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        .success-section {
+            padding: 8rem 2rem;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .success-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .success-icon {
+            font-size: 5rem;
+            color: #25D366;
+            margin-bottom: 2rem;
+            animation: bounceIn 0.8s;
+        }
+
+        .success-card h1 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+        }
+
+        .success-card p {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+
+            70% {
+                transform: scale(0.9);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <span class="brand-name">Michael | Inglês Executivo</span>
+                <span class="brand-tagline">English Teacher</span>
+            </div>
+            <a href="index.html" class="nav-link">Voltar ao Início</a>
+        </nav>
+    </header>
+
+    <section class="success-section">
+        <div class="success-card">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1>Mensagem Enviada!</h1>
+            <p>Obrigado pelo seu contato. Recebi sua mensagem e retornarei em até 24 horas.</p>
+            <p style="font-size: 0.9rem; margin-top: -1rem;">Redirecionando para a página inicial em <span
+                    id="countdown">5</span> segundos...</p>
+            <a href="index.html" class="btn btn-primary">Voltar para o Início</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <p>&copy; 2026 Michael | Inglês Executivo. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Auto-redirect after 5 seconds
+        let seconds = 5;
+        const countdownElement = document.getElementById('countdown');
+        const timer = setInterval(() => {
+            seconds--;
+            if (countdownElement) countdownElement.textContent = seconds;
+            if (seconds <= 0) {
+                clearInterval(timer);
+                window.location.href = 'index.html';
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
