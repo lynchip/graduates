@@ -172,3 +172,148 @@ body {
   margin-right: 0.5rem;
 }
 
+/* Pricing Grid Styling */
+.pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.pricing-card-tier {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  border-radius: 15px;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.pricing-card-tier:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-card-tier.featured {
+  transform: scale(1.05);
+  border: 2px solid #f59e0b;
+}
+
+.tier-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f59e0b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.price-header h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: white;
+}
+
+.price-period {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.pricing-features li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.pricing-features li:last-child {
+  border-bottom: none;
+}
+
+.pricing-features i {
+  color: #10b981;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.pricing-card-tier .btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 1rem;
+  background: white;
+  color: #1e3a8a;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.pricing-card-tier .btn:hover {
+  background: #f3f4f6;
+  transform: translateY(-2px);
+}
+
+.pricing-card-tier.featured .btn {
+  background: #f59e0b;
+  color: white;
+}
+
+.pricing-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+}
+
+.consultation-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #10b981;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pricing-card-tier {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .pricing-card-tier.featured {
+    transform: scale(1);
+  }
+}
+
