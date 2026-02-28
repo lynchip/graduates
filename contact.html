@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Entre em contato para agendar sua consulta gratuita">
+    <meta property="og:title" content="Contato - Michael | Inglês Executivo">
+    <meta property="og:description" content="Agende sua consulta gratuita. Professor nativo de inglês com 26 anos no Brasil. Resposta em 24h!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://graduates.com.br/contact.html">
+    <meta property="og:image" content="https://graduates.com.br/assets/img/logo_512.png">
+    <meta property="og:locale" content="pt_BR">
     <title>Contato - Michael | Inglês Executivo</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +23,7 @@
         <nav class="nav">
             <div class="nav-brand">
                 <span class="brand-name">Michael | Inglês Executivo</span>
-                <span class="brand-tagline">English Teacher</span>
+                <span class="brand-tagline">Inglês para sua Carreira</span>
             </div>
             <button class="nav-toggle" aria-label="Toggle menu">
                 <span></span>
@@ -28,9 +34,9 @@
                 <li><a href="index.html#home" class="nav-link">Início</a></li>
                 <li><a href="index.html#about" class="nav-link">Sobre</a></li>
                 <li><a href="index.html#services" class="nav-link">Serviços</a></li>
-                <li><a href="index.html#why-choose" class="nav-link">Diferenciais</a></li>
                 <li><a href="index.html#testimonials" class="nav-link">Depoimentos</a></li>
                 <li><a href="index.html#pricing" class="nav-link">Preços</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="contact.html" class="nav-link nav-link-cta">Contato</a></li>
             </ul>
         </nav>
@@ -142,53 +148,32 @@
                         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                         <div class="form-group">
                             <label for="name">
-                                Nome Completo <span class="required">*</span>
+                                Nome <span class="required">*</span>
                             </label>
-                            <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+                            <input type="text" id="name" name="name" required placeholder="Seu nome">
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="email">
-                                    Email <span class="required">*</span>
-                                </label>
-                                <input type="email" id="email" name="email" required placeholder="seu@email.com">
-                            </div>
-
-                            <div class="form-group">
                                 <label for="phone">
-                                    Telefone/WhatsApp <span class="required">*</span>
+                                    WhatsApp <span class="required">*</span>
                                 </label>
                                 <input type="tel" id="phone" name="phone" required placeholder="(11) 99999-9999">
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="profession">
-                                Profissão / Área de Atuação <span class="required">*</span>
-                            </label>
-                            <input type="text" id="profession" name="profession" required
-                                placeholder="Ex: Gerente de TI, Desenvolvedor, Analista...">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="level">
-                                Nível de Inglês Atual <span class="required">*</span>
-                            </label>
-                            <select id="level" name="level" required>
-                                <option value="">Selecione seu nível</option>
-                                <option value="Básico">Básico (A1-A2)</option>
-                                <option value="Intermediário">Intermediário (B1-B2)</option>
-                                <option value="Avançado">Avançado (C1-C2)</option>
-                                <option value="Não sei">Não sei / Gostaria de avaliar</option>
-                            </select>
+                            <div class="form-group">
+                                <label for="email">
+                                    Email
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com">
+                            </div>
                         </div>
 
                         <div class="form-group">
                             <label for="interest">
-                                Interesse Principal <span class="required">*</span>
+                                Interesse Principal
                             </label>
-                            <select id="interest" name="interest" required>
+                            <select id="interest" name="interest">
                                 <option value="">Selecione uma opção</option>
                                 <option value="Inglês Corporativo">Inglês Corporativo</option>
                                 <option value="Inglês para TI & Tech">Inglês para TI & Tech</option>
@@ -200,30 +185,16 @@
 
                         <div class="form-group">
                             <label for="message">
-                                Mensagem / Objetivos
+                                Mensagem
                             </label>
-                            <textarea id="message" name="message" rows="4"
-                                placeholder="Conte um pouco sobre seus objetivos com o inglês..."></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="availability">
-                                Preferência de Horário
-                            </label>
-                            <select id="availability" name="availability">
-                                <option value="">Selecione uma opção</option>
-                                <option value="Manhã (6h-12h)">Manhã (6h-12h)</option>
-                                <option value="Tarde (12h-18h)">Tarde (12h-18h)</option>
-                                <option value="Noite (18h-22h)">Noite (18h-22h)</option>
-                                <option value="Fim de semana">Fim de semana</option>
-                                <option value="Flexível">Flexível</option>
-                            </select>
+                            <textarea id="message" name="message" rows="3"
+                                placeholder="Conte um pouco sobre seus objetivos com o inglês (opcional)..."></textarea>
                         </div>
 
                         <div class="form-footer">
                             <p class="form-note">
                                 <i class="fas fa-info-circle"></i>
-                                Ao enviar, seus dados serão encaminhados via WhatsApp
+                                Responderei em até 24 horas. Apenas nome e WhatsApp são obrigatórios!
                             </p>
                             <button type="submit" class="btn btn-primary btn-large">
                                 <i class="fas fa-paper-plane"></i>
@@ -290,6 +261,7 @@
                         <li><a href="index.html">Início</a></li>
                         <li><a href="index.html#about">Sobre</a></li>
                         <li><a href="index.html#services">Serviços</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contato</a></li>
                     </ul>
                 </div>
