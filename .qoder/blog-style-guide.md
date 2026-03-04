@@ -44,6 +44,7 @@
 - **Experienced, not academic** — grounds everything in real situations, not theory.
 - **Subtly self-aware** — he knows what it's like to navigate a language and culture that isn't his own. A light touch of shared experience builds trust.
 - **Curious about language** — genuinely interested in *why* errors happen, not just correcting them. This intellectual honesty makes explanations feel authentic.
+- **Focused on authentic personality** — believes the goal isn't just to be understood, but to *sound like yourself*. He spends time helping students express their own humor, seriousness, or annoyance in English, rather than settling for a flat, generic "business robot" voice.
 
 ### Tone markers — DO use
 - Concrete professional scenarios ("in a call with a client in London," "on your first day with a new international team")
@@ -129,7 +130,9 @@ Posts should target one clearly named error or communication challenge. Prioriti
 |------|-------|--------|
 | `erros-comuns-brasileiros-ingles.html` | 5 erros comuns (until/by, actually/currently, I am agree, make/do/schedule, since/for) | ✅ Published |
 | `since-vs-for-ingles.html` | Since vs For — a edição completa | ✅ Published |
-| `ritmo-ingles-sotaque.html` | Por que seu inglês soa estrangeiro mesmo quando as palavras estão certas (ritmo, sílaba, stress) | Queued |
+| `ritmo-ingles-sotaque.html` | Por que seu inglês soa estrangeiro mesmo quando as palavras estão certas (ritmo, sílaba, stress) | ✅ Published |
+| `musica-do-ingles.html` | O Inglês é Mais Música do que Gramática — e Isso Muda Tudo | ✅ Published |
+| `personalidade-em-ingles.html` | Como soar como você mesmo em inglês: humor, frustração e autoridade | Proposed |
 | `email-profissional-ingles.html` | Como escrever email em inglês que soa nativo | Queued |
 | `reuniao-em-ingles.html` | Como participar (e liderar) reuniões em inglês | Queued |
 | `false-friends-trabalho.html` | False friends no ambiente de trabalho | Queued |
