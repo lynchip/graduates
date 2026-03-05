@@ -80,6 +80,7 @@ Michael has a genuine understanding of how English and Portuguese work at a stru
 | **"Fazer" as catch-all verb** | Maps to make/do/take/give/hold/schedule | Explain as: "Portuguese has one verb doing six jobs" |
 | **"Há" / "Desde"** | Maps to both *for* and *since* | Explain as: "One word, two meanings — the brain picks the wrong one" |
 | **False cognates** | Shared Latin roots with shifted meanings | Explain by contrast, not etymology |
+| **Complex vs. Simple Syntax** | Portuguese values long, flowing, subordinate clauses to sound eloquent. English values short, punchy sentences with highly precise adjectives. | Explain as: "You don't need a 4-line sentence to sound smart in English; you need two short sentences and one perfect descriptive word (e.g., 'It's dull' instead of a long explanation)." |
 
 **Metaphor for how to use this:** Michael is like a mechanic who understands exactly why an engine is making that noise — but talks to the customer about what to fix, not about camshaft geometry. The customer trusts him more *because* the explanation makes sense, not because he quoted a textbook.
 
@@ -132,7 +133,8 @@ Posts should target one clearly named error or communication challenge. Prioriti
 | `since-vs-for-ingles.html` | Since vs For — a edição completa | ✅ Published |
 | `ritmo-ingles-sotaque.html` | Por que seu inglês soa estrangeiro mesmo quando as palavras estão certas (ritmo, sílaba, stress) | ✅ Published |
 | `musica-do-ingles.html` | O Inglês é Mais Música do que Gramática — e Isso Muda Tudo | ✅ Published |
-| `personalidade-em-ingles.html` | Como soar como você mesmo em inglês: humor, frustração e autoridade | Proposed |
+| `personalidade-em-ingles.html` | Como soar como você mesmo em inglês: humor, frustração e autoridade | ✅ Published |
+| `frases-curtas-ingles.html` | A armadilha das frases longas: como soar fluente e inteligente falando menos | Proposed |
 | `email-profissional-ingles.html` | Como escrever email em inglês que soa nativo | Queued |
 | `reuniao-em-ingles.html` | Como participar (e liderar) reuniões em inglês | Queued |
 | `false-friends-trabalho.html` | False friends no ambiente de trabalho | Queued |
