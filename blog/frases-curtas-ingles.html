@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W37S56NX');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-64H2XF537N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-64H2XF537N');
+</script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,6 +93,90 @@
             opacity: 0.8;
             margin-bottom: 0.6rem;
         }
+
+        /* Gap-fill Exercise Styling */
+        .exercise-container {
+            background: #f8faff;
+            border: 1px solid #e1e8f5;
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+        }
+
+        .exercise-title {
+            font-size: 1.25rem;
+            color: var(--primary-dark);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .word-bank {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+            background: white;
+            padding: 1.25rem;
+            border-radius: 12px;
+            border: 1px dashed var(--primary-color);
+            margin-bottom: 2.5rem;
+        }
+
+        .word-pill {
+            background: #eef2ff;
+            color: var(--primary-color);
+            padding: 0.4rem 1rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(74, 108, 247, 0.1);
+        }
+
+        .exercise-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            counter-reset: exercise-counter;
+        }
+
+        .exercise-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid #edf2f7;
+            align-items: baseline;
+            line-height: 1.6;
+        }
+
+        .exercise-item:last-child {
+            border-bottom: none;
+        }
+
+        .exercise-item::before {
+            counter-increment: exercise-counter;
+            content: counter(exercise-counter);
+            background: var(--primary-color);
+            color: white;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 0.75rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .gap-line {
+            display: inline-block;
+            min-width: 120px;
+            border-bottom: 2px solid #cbd5e0;
+            margin: 0 0.5rem;
+            position: relative;
+            top: -2px;
+        }
     </style>
     <script type="application/ld+json">
         {
@@ -103,6 +203,10 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W37S56NX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Header & Navigation -->
     <header class="header">
         <nav class="nav">
@@ -198,9 +302,59 @@
                     muito forte em quase todas as frases. Você consegue ver qual é?
                 </p>
 
-                <div style="text-align: center; margin: 2.5rem 0;">
-                    <img src="../assets/img/gap-fill.png" alt="Gap-fill exercise showing short sentences"
-                        style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+
+                <div class="exercise-container">
+                    <h2 class="exercise-title">Complete the sentences with these words</h2>
+
+                    <div class="word-bank">
+                        <span class="word-pill">awful</span>
+                        <span class="word-pill">catchy</span>
+                        <span class="word-pill">commercial</span>
+                        <span class="word-pill">disturbing</span>
+                        <span class="word-pill">dull</span>
+                        <span class="word-pill">gripping</span>
+                        <span class="word-pill">hilarious</span>
+                        <span class="word-pill">over-the-top</span>
+                        <span class="word-pill">uplifting</span>
+                        <span class="word-pill">weird</span>
+                    </div>
+
+                    <div class="exercise-list">
+                        <div class="exercise-item">
+                            <span>It does nothing for me. It's quite boring, quite <span
+                                    class="gap-line"></span>.</span>
+                        </div>
+                        <div class="exercise-item">
+                            <span>It's one of those tunes that's very easy to remember — very <span
+                                    class="gap-line"></span>.</span>
+                        </div>
+                        <div class="exercise-item">
+                            <span>It's <span class="gap-line"></span> — just really, really funny.</span>
+                        </div>
+                        <div class="exercise-item">
+                            <span>It didn't do much for me. It's typical big-budget Hollywood — very <span
+                                    class="gap-line"></span>.</span>
+                        </div>
+                        <div class="exercise-item">
+                            <span>I can't explain it. It's really strange — really <span
+                                    class="gap-line"></span>.</span>
+                        </div>
+                        <div class="exercise-item">
+                            <span>It's just too much for my liking — really <span class="gap-line"></span>.</span>
+                        </div>
+                        <div class="exercise-item">
+                            <span>You can't stop reading. It's so exciting, so <span class="gap-line"></span>!</span>
+                        </div>
+                        <div class="exercise-item">
+                            <span>It's good, but it's quite upsetting — quite <span class="gap-line"></span>.</span>
+                        </div>
+                        <div class="exercise-item">
+                            <span>It's a really inspiring story, really <span class="gap-line"></span>.</span>
+                        </div>
+                        <div class="exercise-item">
+                            <span>Don't go and see it! It's dreadful, absolutely <span class="gap-line"></span>.</span>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Block 1 -->
