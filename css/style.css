@@ -177,6 +177,51 @@ body {
     opacity: 0.95;
 }
 
+.hero-methodology {
+    margin-bottom: 2rem;
+}
+
+.hero-methodology h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.hero-methodology ul {
+    list-style: disc inside;
+    margin: 0;
+    padding-left: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.hero-methodology-note {
+    font-size: 1rem;
+    opacity: 0.95;
+}
+
+.about-methodology {
+    margin-top: 1rem;
+    font-style: italic;
+    opacity: 0.95;
+}
+
+.hero-faq-card {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.hero-faq-question {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hero-faq-answer {
+    margin: 0;
+    line-height: 1.5;
+}
+
 .hero-badges {
     display: flex;
     flex-wrap: wrap;
@@ -198,6 +243,12 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+.hero-cta-note {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    opacity: 0.9;
 }
 
 .hero-image {
