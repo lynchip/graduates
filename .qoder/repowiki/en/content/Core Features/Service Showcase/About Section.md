@@ -4,9 +4,16 @@
 **Referenced Files in This Document**
 - [index.html](file://index.html)
 - [style.css](file://css/style.css)
-- [README.md](file://README.md)
 - [main.js](file://js/main.js)
 </cite>
+
+## Update Summary
+**Changes Made**
+- Updated content analysis to reflect the shift from instructor credentials to student-centered messaging
+- Revised emphasis on accessibility theme ("todo mundo pode falar inglês")
+- Updated focus from professor qualifications to natural communication patterns
+- Enhanced documentation of the new student-centered approach
+- Updated highlight items to reflect cultural understanding and student empowerment
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -20,13 +27,15 @@
 9. [Conclusion](#conclusion)
 
 ## Introduction
-This document provides comprehensive guidance for the About section that showcases professor credentials and experience. It explains the HTML structure, CSS grid layout for highlights, responsive design behavior, and how to maintain visual consistency and accessibility while customizing content for different instructor profiles. It also covers the four key differentiators highlighted in the current implementation: international experience, corporate/TI background, TEFL certification, and cultural understanding.
+This document provides comprehensive guidance for the About section that emphasizes accessibility and student-centered learning rather than traditional instructor credentials. The section now focuses on making English learning accessible to everyone ("todo mundo pode falar inglês") while showcasing natural communication patterns and cultural understanding. It explains the HTML structure, CSS grid layout for highlights, responsive design behavior, and how to maintain visual consistency and accessibility while customizing content for different instructor profiles.
+
+**Updated** The content has been rewritten to prioritize accessibility themes and student empowerment over traditional professor credentials, reflecting a shift toward inclusive language and practical communication skills.
 
 ## Project Structure
 The About section resides within the main landing page and is composed of:
 - A section header with label and title
-- A professor introduction paragraph
-- A highlights grid containing four credential items, each with an icon and descriptive text
+- A professor introduction paragraph emphasizing accessibility and natural communication
+- A highlights grid containing four credential items, each with an icon and descriptive text focused on cultural understanding and student empowerment
 
 ```mermaid
 graph TB
@@ -34,6 +43,7 @@ IndexHTML["index.html<br/>Defines About section structure"] --> AboutSection["Ab
 AboutSection --> Header["Section Header<br/>.section-header"]
 AboutSection --> Content["About Content<br/>.about-content"]
 Content --> Text["About Text<br/>.about-text"]
+Text --> Name["Professor Name<br/>.about-text h3"]
 Text --> Intro["Introduction<br/>.about-intro"]
 Text --> Highlights["Highlights Grid<br/>.about-highlights"]
 Highlights --> Item1["Highlight Item 1<br/>.highlight-item"]
@@ -43,20 +53,19 @@ Highlights --> Item4["Highlight Item 4<br/>.highlight-item"]
 ```
 
 **Diagram sources**
-- [index.html:110-158](file://index.html#L110-L158)
+- [index.html:122-172](file://index.html#L122-L172)
 
 **Section sources**
-- [index.html:110-158](file://index.html#L110-L158)
-- [README.md:28-40](file://README.md#L28-L40)
+- [index.html:122-172](file://index.html#L122-L172)
 
 ## Core Components
 - Section container with ID for navigation targeting
 - Section header with label and title
-- Introduction paragraph with emphasis on native speaker background and Brazilian experience
+- Introduction paragraph with emphasis on accessibility and natural communication patterns
 - Highlights grid with four items, each featuring:
   - Icon (Font Awesome)
   - Heading describing the credential/differentiator
-  - Supporting paragraph with details
+  - Supporting paragraph with details focused on student empowerment
 
 Key elements and selectors:
 - Container: section#about.about
@@ -67,7 +76,7 @@ Key elements and selectors:
 - Individual item: .highlight-item with .highlight-item i, h4, p
 
 **Section sources**
-- [index.html:110-158](file://index.html#L110-L158)
+- [index.html:122-172](file://index.html#L122-L172)
 - [style.css:326-376](file://css/style.css#L326-L376)
 
 ## Architecture Overview
@@ -87,7 +96,7 @@ MainJS --> SmoothScroll["Smooth scroll to #about"]
 ```
 
 **Diagram sources**
-- [index.html:110-158](file://index.html#L110-L158)
+- [index.html:122-172](file://index.html#L122-L172)
 - [style.css:326-376](file://css/style.css#L326-L376)
 - [main.js:47-62](file://js/main.js#L47-L62)
 
@@ -98,9 +107,9 @@ The About section is defined with:
 - A section wrapper with ID for navigation
 - A centered header with label and title
 - A content area containing:
-  - A heading for the professor’s name
-  - An introductory paragraph highlighting native speaker status and Brazilian experience
-  - A grid of four highlight items, each with an icon and text
+  - A heading for the professor's name
+  - An introductory paragraph highlighting accessibility themes and natural communication
+  - A grid of four highlight items, each with an icon and text focused on cultural understanding
 
 ```mermaid
 flowchart TD
@@ -119,10 +128,10 @@ ItemLoop --> End(["Done"])
 ```
 
 **Diagram sources**
-- [index.html:110-158](file://index.html#L110-L158)
+- [index.html:122-172](file://index.html#L122-L172)
 
 **Section sources**
-- [index.html:110-158](file://index.html#L110-L158)
+- [index.html:122-172](file://index.html#L122-L172)
 
 ### CSS Grid Layout for Highlights
 The highlights are laid out using CSS Grid:
@@ -132,7 +141,7 @@ The highlights are laid out using CSS Grid:
 
 Responsive behavior:
 - On tablets and smaller, the grid collapses to a single column
-- On larger screens, the grid remains a single column but items can stack vertically due to the grid’s automatic fitting
+- On larger screens, the grid remains a single column but items can stack vertically due to the grid's automatic fitting
 
 ```mermaid
 flowchart TD
@@ -170,13 +179,15 @@ Phone --> TypographyScale["Typography Scales Down"]
 - [style.css:1239-1329](file://css/style.css#L1239-L1329)
 
 ### Four Key Differentiators
-The current implementation highlights four distinct credentials/differentiators:
-1. International experience
-2. Corporate/TI background
-3. TEFL certification
-4. Cultural understanding
+The current implementation highlights four distinct credentials/differentiators focused on student empowerment:
+1. **Experiência Internacional** - International experience spanning multiple continents
+2. **Background Empresarial & TI** - Corporate and technology background
+3. **TEFL Certificado** - International TEFL certification
+4. **Entende Você** - Cultural understanding and student-centric approach
 
-These are represented as four .highlight-item entries under .about-highlights, each with a descriptive heading and paragraph.
+These are represented as four .highlight-item entries under .about-highlights, each with a descriptive heading and paragraph that emphasizes the instructor's ability to connect with diverse student needs.
+
+**Updated** The fourth differentiator has been changed from "Cultural understanding" to "Entende Você" (Understands You), which better reflects the student-centered approach and accessibility theme.
 
 ```mermaid
 classDiagram
@@ -194,10 +205,10 @@ AboutSection --> HighlightItem : "Four instances"
 ```
 
 **Diagram sources**
-- [index.html:125-154](file://index.html#L125-L154)
+- [index.html:139-168](file://index.html#L139-L168)
 
 **Section sources**
-- [index.html:125-154](file://index.html#L125-L154)
+- [index.html:139-168](file://index.html#L139-L168)
 
 ### Adding New Highlight Items
 To add a new highlight item:
@@ -213,7 +224,7 @@ Example steps:
 - Keep the outer div with class .highlight-item
 
 **Section sources**
-- [index.html:125-154](file://index.html#L125-L154)
+- [index.html:139-168](file://index.html#L139-L168)
 
 ### Modifying Iconography
 Icons are Font Awesome classes applied to i tags within each .highlight-item. To change an icon:
@@ -225,17 +236,19 @@ Accessibility note:
 - Icons are decorative; ensure they complement the text and do not replace meaningful text
 
 **Section sources**
-- [index.html:125-154](file://index.html#L125-L154)
+- [index.html:139-168](file://index.html#L139-L168)
 
 ### Customizing Content for Different Profiles
 To adapt the About section for different instructors:
-- Update the professor’s name in the .about-text h3
-- Revise the .about-intro paragraph to reflect the new instructor’s background, certifications, and cultural insights
-- Adjust the four .highlight-item entries to match the new instructor’s credentials and experience
+- Update the professor's name in the .about-text h3
+- Revise the .about-intro paragraph to reflect the new instructor's background, certifications, and cultural insights
+- Adjust the four .highlight-item entries to match the new instructor's credentials and experience
 - Keep the HTML structure intact to preserve styling and responsiveness
 
+**Updated** The customization should emphasize accessibility themes and student-centered approaches rather than focusing solely on traditional academic credentials.
+
 **Section sources**
-- [index.html:118-154](file://index.html#L118-L154)
+- [index.html:129-168](file://index.html#L129-L168)
 
 ### Maintaining Visual Consistency
 - Preserve the .about-highlights grid and .highlight-item classes to keep consistent spacing and layout
@@ -246,13 +259,15 @@ To adapt the About section for different instructors:
 - [style.css:347-376](file://css/style.css#L347-L376)
 
 ### Accessibility Compliance
-- Headings: Use h3 for the professor’s name and h4 for each highlight title; keep a logical heading hierarchy
+- Headings: Use h3 for the professor's name and h4 for each highlight title; keep a logical heading hierarchy
 - Contrast: Ensure sufficient contrast between text and background for readability
 - Focus: Maintain focus styles for interactive elements (navigation, buttons)
 - ARIA: Add aria-label attributes to decorative icons if needed, or rely on surrounding text for context
 
+**Updated** The accessibility approach should emphasize inclusive language and universal design principles, particularly around the "todo mundo pode falar inglês" theme.
+
 **Section sources**
-- [index.html:118-154](file://index.html#L118-L154)
+- [index.html:129-168](file://index.html#L129-L168)
 - [style.css:326-376](file://css/style.css#L326-L376)
 
 ## Architecture Overview
@@ -296,12 +311,12 @@ JS --> SmoothScroll["Smooth scroll to #about"]
 ```
 
 **Diagram sources**
-- [index.html:110-158](file://index.html#L110-L158)
+- [index.html:122-172](file://index.html#L122-L172)
 - [style.css:347-376](file://css/style.css#L347-L376)
 - [main.js:47-62](file://js/main.js#L47-L62)
 
 **Section sources**
-- [index.html:110-158](file://index.html#L110-L158)
+- [index.html:122-172](file://index.html#L122-L172)
 - [style.css:347-376](file://css/style.css#L347-L376)
 - [main.js:47-62](file://js/main.js#L47-L62)
 
@@ -328,4 +343,6 @@ Common issues and resolutions:
 - [style.css:1239-1329](file://css/style.css#L1239-L1329)
 
 ## Conclusion
-The About section effectively communicates professor credentials and experience through a clean, accessible structure and a responsive grid layout. By preserving the HTML and CSS patterns outlined here, you can confidently add new highlight items, adjust iconography, and tailor the content for different instructor profiles while maintaining visual consistency and accessibility across devices.
+The About section effectively communicates an accessibility-focused, student-centered approach to English learning through a clean, accessible structure and a responsive grid layout. The emphasis on "todo mundo pode falar inglês" (everyone can speak English) and natural communication patterns creates an inclusive environment that prioritizes student success over traditional instructor credentials. By preserving the HTML and CSS patterns outlined here, you can confidently add new highlight items, adjust iconography, and tailor the content for different instructor profiles while maintaining visual consistency and accessibility across devices.
+
+**Updated** The section now serves as a model for inclusive, student-centered communication that emphasizes accessibility and practical language skills over academic credentials.

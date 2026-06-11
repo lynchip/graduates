@@ -5,10 +5,18 @@
 - [index.html](file://index.html)
 - [style.css](file://css/style.css)
 - [styles.css](file://assets/css/styles.css)
-- [Footer-with-Pricing.css](file://assets/css/Footer-with-Pricing.css)
-- [Navbar-With-Button-icons.css](file://assets/css/Navbar-With-Button-icons.css)
 - [main.js](file://js/main.js)
 </cite>
+
+## Update Summary
+**Changes Made**
+- Complete transformation from five-service card system to four-profile card system with tag-based presentation
+- Replaced specialized service categories with comprehensive instructor profile cards
+- Updated section title from "Services" to "Profile Section" to reflect new content focus
+- Modified HTML structure to use profile-card and tag-list classes instead of service-card
+- Updated CSS grid system to use profile-grid instead of services-grid
+- Removed service-specific feature lists in favor of tag-based presentation
+- Retained scroll animation functionality for profile cards
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -22,231 +30,234 @@
 9. [Conclusion](#conclusion)
 
 ## Introduction
-This document provides a comprehensive guide to the Services Section implementation, focusing on the four specialized service offerings and the featured service highlighting mechanism. It explains the HTML structure for each service card, the CSS grid layout system, responsive design patterns, and the popular badge system. It also covers customization guidelines for adding new services, adjusting pricing information, modifying feature lists, and maintaining consistent styling across service cards.
+This document provides a comprehensive guide to the Profile Section implementation, focusing on the four specialized instructor profile cards and the tag-based presentation system. The Profile Section has been strategically repositioned to showcase the instructor's comprehensive expertise through four distinct profile categories, each presented with a tag-based system that highlights specific competencies and experiences.
+
+The Profile Section demonstrates a modern approach to presenting instructor qualifications through clean, organized tag displays rather than traditional feature lists. Each profile card includes an icon, title, and a collection of relevant tags that represent the instructor's expertise areas.
 
 ## Project Structure
-The Services Section is implemented within the main landing page and styled using dedicated CSS files. The HTML markup defines the service cards and their content, while the CSS files define the grid layout, typography, and responsive behavior. A small amount of JavaScript handles scroll animations for the service cards.
+The Profile Section is implemented within the main landing page and styled using dedicated CSS files. The HTML markup defines the profile cards and their tag collections, while the CSS files define the grid layout, typography, and responsive behavior. A small amount of JavaScript handles scroll animations for the profile cards.
 
 ```mermaid
 graph TB
-IndexHTML["index.html<br/>Services Section Markup"] --> StyleCSS["css/style.css<br/>Service Card Styles"]
+IndexHTML["index.html<br/>Profile Section Markup"] --> StyleCSS["css/style.css<br/>Profile Card Styles"]
 IndexHTML --> AssetsStyles["assets/css/styles.css<br/>Grid & Layout Overrides"]
 IndexHTML --> JSMain["js/main.js<br/>Scroll Animations"]
-StyleCSS --> ServicesGrid["Services Grid<br/>auto-fit, minmax"]
+StyleCSS --> ProfileGrid["Profile Grid<br/>2-column layout"]
 AssetsStyles --> Responsive["Responsive Breakpoints<br/>Mobile & Tablet"]
 ```
 
 **Diagram sources**
-- [index.html:160-254](file://index.html#L160-L254)
-- [style.css:378-464](file://css/style.css#L378-L464)
+- [index.html:265-356](file://index.html#L265-L356)
+- [style.css:381-448](file://css/style.css#L381-L448)
 - [styles.css:121-127](file://assets/css/styles.css#L121-L127)
 - [main.js:200-231](file://js/main.js#L200-L231)
 
 **Section sources**
-- [index.html:160-254](file://index.html#L160-L254)
-- [style.css:378-464](file://css/style.css#L378-L464)
+- [index.html:265-356](file://index.html#L265-L356)
+- [style.css:381-448](file://css/style.css#L381-L448)
 - [styles.css:121-127](file://assets/css/styles.css#L121-L127)
 - [main.js:200-231](file://js/main.js#L200-L231)
 
 ## Core Components
-The Services Section consists of:
-- A container with a section header and a grid of service cards
-- Five service cards representing the following categories:
-  - Communication Strategies
-  - Business English
-  - English for IT & Tech
-  - Advanced Conversation
-  - Exam Preparation
-- One featured service card highlighted with a “Popular” badge and elevated styling
+The Profile Section consists of:
+- A container with a section header and a grid of profile cards
+- Four profile cards representing the following expertise areas:
+  - Experience Level Proficiency
+  - International Experience
+  - Language Learning Objectives
+  - Specific Purpose Areas
+  - Teaching Style Philosophy
+- Each profile card includes:
+  - An icon area with a professional icon
+  - A title describing the expertise area
+  - A tag list with relevant competency tags
 
-Each service card includes:
-- An icon area
-- A title
-- A descriptive paragraph
-- A feature list with checkmark icons
+The Profile Section replaces the previous service-based approach with a more comprehensive presentation of instructor qualifications and expertise areas.
 
 **Section sources**
-- [index.html:160-254](file://index.html#L160-L254)
+- [index.html:265-356](file://index.html#L265-L356)
 
 ## Architecture Overview
-The Services Section follows a modular architecture:
-- HTML markup defines the structure and content
-- CSS applies grid layout, typography, and responsive behavior
+The Profile Section follows a modular architecture:
+- HTML markup defines the structure and content using profile-card and tag-list classes
+- CSS applies grid layout, typography, and responsive behavior with profile-grid
 - JavaScript adds scroll animations for a polished user experience
 
 ```mermaid
 graph TB
 subgraph "HTML"
-ServicesContainer["Services Container<br/>Section with Grid"]
-ServiceCards["Service Cards<br/>Icons, Titles, Descriptions, Features"]
-FeaturedBadge["Featured Badge<br/>Popular Label"]
+ProfileContainer["Profile Container<br/>Section with Grid"]
+ProfileCards["Profile Cards<br/>Icons, Titles, Tag Lists"]
+WideCard["Wide Profile Card<br/>Teaching Style Section"]
 end
 subgraph "CSS"
-ServicesGrid["Grid Layout<br/>auto-fit, minmax"]
+ProfileGrid["Grid Layout<br/>2-column, auto-fit"]
 CardStyling["Card Styling<br/>Hover Effects, Shadows"]
+TagStyling["Tag Styling<br/>Rounded Badges"]
 ResponsiveRules["Responsive Rules<br/>Breakpoints"]
 end
 subgraph "JS"
 ScrollAnimation["Scroll Animation<br/>Intersection Observer"]
 end
-ServicesContainer --> ServicesGrid
-ServiceCards --> CardStyling
-FeaturedBadge --> CardStyling
-ServicesGrid --> ResponsiveRules
-ScrollAnimation --> ServiceCards
+ProfileContainer --> ProfileGrid
+ProfileCards --> CardStyling
+TagStyling --> CardStyling
+ProfileGrid --> ResponsiveRules
+ScrollAnimation --> ProfileCards
 ```
 
 **Diagram sources**
-- [index.html:160-254](file://index.html#L160-L254)
-- [style.css:378-464](file://css/style.css#L378-L464)
+- [index.html:265-356](file://index.html#L265-L356)
+- [style.css:381-448](file://css/style.css#L381-L448)
 - [styles.css:121-127](file://assets/css/styles.css#L121-L127)
 - [main.js:200-231](file://js/main.js#L200-L231)
 
 ## Detailed Component Analysis
 
-### HTML Structure for Service Cards
-Each service card is structured consistently:
-- A container with a class indicating a service card
-- An icon area containing a Font Awesome icon
-- A title element
-- A paragraph describing the service
-- A feature list with multiple items, each prefixed by a checkmark icon
+### HTML Structure for Profile Cards
+Each profile card is structured consistently:
+- A container with a class indicating a profile card
+- A header section containing an icon wrapper and title
+- A tag list with multiple tags, each representing a specific competency or experience area
 
-The featured service card additionally includes a badge positioned near the top-right corner.
+The wide profile card (Teaching Style) spans the full width of the grid using the profile-card--wide class.
 
 Key HTML elements and classes:
-- Container: service-card
-- Icon area: service-icon
+- Container: profile-card
+- Header: profile-card-header
+- Icon area: profile-card-icon
 - Title: h3
-- Description: p
-- Feature list: service-features
-- Featured badge: service-badge
-- Featured modifier: featured
+- Tag list: tag-list
+- Wide card modifier: profile-card--wide
+- Individual tags: tag
 
 **Section sources**
-- [index.html:170-254](file://index.html#L170-L254)
+- [index.html:275-356](file://index.html#L275-L356)
 
 ### CSS Grid Layout System
-The Services Section uses a CSS Grid to arrange service cards responsively:
-- The grid container uses a two-dimensional grid with automatic column sizing
-- Columns are defined using auto-fit and a minimum width threshold
+The Profile Section uses a CSS Grid to arrange profile cards responsively:
+- The grid container uses a two-column layout with equal width columns
+- The wide card spans both columns using grid-column: 1 / -1
 - Gaps between cards are standardized for consistent spacing
 
 Responsive behavior:
-- On larger screens, multiple columns are displayed
-- On smaller screens, columns stack to accommodate limited width
+- On larger screens, two columns are displayed side-by-side
+- On smaller screens, the layout adapts to available space
+- The wide card automatically becomes a single column on smaller screens
 
 **Section sources**
 - [style.css:381-385](file://css/style.css#L381-L385)
+- [style.css:436-438](file://css/style.css#L436-L438)
 - [styles.css:121-127](file://assets/css/styles.css#L121-L127)
 
 ### Responsive Design Patterns
-The Services Section adapts to various screen sizes:
-- Minimum column width ensures readability on small devices
+The Profile Section adapts to various screen sizes:
+- Two-column layout ensures optimal card distribution on desktop
 - Hover effects and shadows enhance interactivity
 - Typography scales appropriately across breakpoints
+- The wide card automatically adjusts its layout on smaller screens
 
 Media queries adjust:
 - Grid behavior for optimal card distribution
 - Spacing and padding for compact layouts on mobile
-- Visual emphasis for the featured card on tablets and phones
+- Visual emphasis for the wide card on tablets and phones
 
 **Section sources**
 - [style.css:381-406](file://css/style.css#L381-L406)
+- [style.css:436-438](file://css/style.css#L436-L438)
 - [styles.css:304-318](file://assets/css/styles.css#L304-L318)
 
-### Featured Service Highlighting Mechanism
-The featured service is visually distinguished by:
-- A special class applied to the card container
-- A prominent badge positioned near the top-right corner
-- Elevated styling including a border accent and gradient background
+### Profile Card Design System
+Each profile card follows a consistent design pattern:
+- Professional icon in a circular gradient background
+- Clean typography with clear hierarchy
+- Rounded tag badges with subtle borders
+- Hover effects that enhance interactivity
+- Shadow-based elevation for depth perception
 
-The badge is positioned absolutely and styled to draw attention without disrupting the card’s content flow.
+The design emphasizes professionalism and clarity while maintaining visual consistency across all cards.
 
 **Section sources**
-- [index.html:219-235](file://index.html#L219-L235)
-- [style.css:403-418](file://css/style.css#L403-L418)
+- [style.css:401-448](file://css/style.css#L401-L448)
 
-### Service Categories and Content
-The Services Section presents five distinct categories, each with a unique icon and tailored feature list:
+### Profile Categories and Content
+The Profile Section presents four distinct expertise areas, each with a unique icon and tailored tag collection:
 
-- Communication Strategies
-  - Icon: comments
-  - Focus: fluency maintenance, filler usage, conversation recovery
-- Business English
+- **Experience Level Proficiency**
+  - Icon: layer-group
+  - Focus: Language proficiency levels from Intermediate to Advanced Superior
+  - Tags: Intermediário, Intermediário Superior, Avançado, Avançado Superior
+- **International Experience**
+  - Icon: globe-americas
+  - Focus: Global teaching and living experience across multiple countries
+  - Tags: Irlanda, Reino Unido (11 anos), Estados Unidos (1 ano), Austrália (2 anos), África, Ásia, Brasil (26 anos)
+- **Language Learning Objectives**
+  - Icon: bullseye
+  - Focus: Specific language learning goals and skill areas
+  - Tags: Accent Reduction, Listening Comprehension, Reading Comprehension, Speaking Practice, Vocabulary Development, Phonetics, Writing Correction
+- **Specific Purpose Areas**
   - Icon: briefcase
-  - Focus: presentations, meetings, professional emails, negotiation techniques
-- English for IT & Tech
-  - Icon: laptop-code
-  - Focus: technical vocabulary, Agile/Scrum, technical documentation, interview practice
-- Advanced Conversation
-  - Icon: comments
-  - Focus: fluency development, accent reduction, idiomatic expressions, cultural nuances
-- Exam Preparation
-  - Icon: graduation-cap
-  - Focus: TOEFL/IELTS, Cambridge exams, test strategies, practical simulations
+  - Focus: Contextual English applications for specific professional needs
+  - Tags: Academic English, Business English, Technical English, Interview Preparation, Medical English
+- **Teaching Style Philosophy** *(Wide Card)*
+  - Icon: chalkboard-teacher
+  - Focus: Teaching methodology and approach philosophy
+  - Tags: Conversation-focused, Grammar when necessary, Real-world examples, Patient & direct feedback, No translation dependency
 
-Each category includes a descriptive paragraph and a feature list aligned with the service’s goals.
+Each category includes a professional icon, clear title, and a comprehensive tag list that represents the instructor's expertise in that area.
 
 **Section sources**
-- [index.html:170-254](file://index.html#L170-L254)
+- [index.html:275-356](file://index.html#L275-L356)
 
-### Adding New Services
-To add a new service:
-1. Duplicate an existing service card structure within the services grid container.
-2. Replace the icon, title, description, and feature list with the new service details.
-3. Optionally apply the featured class to highlight a popular offering.
+### Adding New Profile Categories
+To add a new profile category:
+1. Duplicate an existing profile card structure within the profile grid container.
+2. Replace the icon, title, and tag list with the new expertise area details.
+3. Optionally use the wide card modifier for longer tag lists.
 4. Ensure the new card maintains the same class structure for consistent styling.
 
 Guidelines:
-- Use the same icon wrapper and feature list structure.
-- Keep feature lists concise and scannable.
+- Use the same icon wrapper and tag list structure.
+- Keep tag lists concise and scannable.
 - Maintain consistent spacing and typography.
+- Consider using the wide card modifier for categories with many tags.
 
 **Section sources**
-- [index.html:170-254](file://index.html#L170-L254)
-- [style.css:448-463](file://css/style.css#L448-L463)
+- [index.html:275-356](file://index.html#L275-L356)
+- [style.css:436-438](file://css/style.css#L436-L438)
 
-### Customizing Pricing Information
-While pricing information resides in a separate section, the same design principles apply:
-- Use a consistent grid layout for pricing tiers.
-- Apply a featured modifier to highlight the most popular option.
-- Maintain uniform typography and spacing across tiers.
-
-**Section sources**
-- [index.html:383-479](file://index.html#L383-L479)
-- [style.css:175-201](file://css/style.css#L175-L201)
-
-### Modifying Feature Lists
-Feature lists are implemented as unordered lists with consistent styling:
-- Each item includes a checkmark icon and descriptive text.
-- Items are spaced vertically for readability.
-- Hover states and transitions provide interactive feedback.
+### Customizing Tag Content
+Tags are implemented as rounded badges with consistent styling:
+- Each tag includes professional text and descriptive content
+- Tags are spaced horizontally for readability
+- Hover states and transitions provide interactive feedback
+- Color schemes distinguish tags from the card background
 
 When editing:
-- Keep bullet points short and action-oriented.
-- Ensure the list remains scannable on small screens.
+- Keep tag text concise and professional.
+- Ensure the tag list remains scannable on small screens.
+- Consider grouping related tags for better organization.
 
 **Section sources**
-- [index.html:180-250](file://index.html#L180-L250)
-- [style.css:448-463](file://css/style.css#L448-L463)
+- [index.html:283-353](file://index.html#L283-L353)
+- [style.css:440-448](file://css/style.css#L440-L448)
 
-### Implementing the Popular Badge System
-The popular badge system uses:
-- A dedicated badge element inside the featured card
-- Absolute positioning to place the badge near the top-right corner
-- A contrasting color scheme to emphasize popularity
+### Implementing the Wide Card Pattern
+The wide card pattern uses:
+- A dedicated wide card class that spans both columns
+- Full-width tag display for comprehensive content
+- Specialized styling to differentiate from standard cards
 
 Best practices:
-- Keep badge text concise and actionable.
-- Align badge placement across all cards for consistency.
-- Ensure the badge does not overlap with content.
+- Use the wide card modifier for categories with extensive tag lists.
+- Ensure the wide card remains readable on all screen sizes.
+- Maintain consistent padding and spacing across all cards.
 
 **Section sources**
-- [index.html:220](file://index.html#L220)
-- [style.css:408-418](file://css/style.css#L408-L418)
+- [index.html:339](file://index.html#L339)
+- [style.css:436-438](file://css/style.css#L436-L438)
 
-### Maintaining Consistent Styling Across Service Cards
+### Maintaining Consistent Styling Across Profile Cards
 Consistency is achieved through:
 - Shared class names for structure and styling
 - Centralized CSS variables for colors and spacing
@@ -254,29 +265,32 @@ Consistency is achieved through:
 - Responsive adjustments that preserve readability
 
 Recommendations:
-- Use the same icon wrapper and feature list structure for all cards.
+- Use the same icon wrapper and tag list structure for all cards.
 - Maintain consistent padding and margins.
 - Apply the same typography scale and line heights.
+- Ensure all cards have the same shadow and border treatment.
 
 **Section sources**
-- [style.css:378-464](file://css/style.css#L378-L464)
+- [style.css:381-448](file://css/style.css#L381-L448)
 - [styles.css:121-127](file://assets/css/styles.css#L121-L127)
 
 ### Optimizing for Different Screen Sizes
 Optimization strategies:
-- Use flexible grid units with minimum widths to prevent overlapping.
+- Use flexible grid units with equal width columns to prevent overlapping.
 - Adjust spacing and padding for mobile-first usability.
 - Preserve visual hierarchy by keeping typography and icon sizes readable.
 - Ensure hover effects remain accessible on touch devices.
+- The wide card automatically adapts to single-column layout on smaller screens.
 
 **Section sources**
 - [style.css:381-406](file://css/style.css#L381-L406)
+- [style.css:436-438](file://css/style.css#L436-L438)
 - [styles.css:304-318](file://assets/css/styles.css#L304-L318)
 
 ## Dependency Analysis
-The Services Section depends on:
-- HTML structure for content and semantics
-- CSS for layout, typography, and responsiveness
+The Profile Section depends on:
+- HTML structure for content and semantics using profile-card classes
+- CSS for layout, typography, and responsiveness with profile-grid
 - JavaScript for scroll-triggered animations
 
 ```mermaid
@@ -284,39 +298,43 @@ graph TB
 HTMLIndex["index.html"] --> CSSStyle["css/style.css"]
 HTMLIndex --> CSSAssets["assets/css/styles.css"]
 HTMLIndex --> JSMain["js/main.js"]
-CSSStyle --> ServicesGrid["Services Grid"]
+CSSStyle --> ProfileGrid["Profile Grid"]
 CSSAssets --> ResponsiveGrid["Responsive Grid"]
 JSMain --> ScrollObserver["Intersection Observer"]
 ```
 
 **Diagram sources**
-- [index.html:160-254](file://index.html#L160-L254)
-- [style.css:378-464](file://css/style.css#L378-L464)
+- [index.html:265-356](file://index.html#L265-L356)
+- [style.css:381-448](file://css/style.css#L381-L448)
 - [styles.css:121-127](file://assets/css/styles.css#L121-L127)
 - [main.js:200-231](file://js/main.js#L200-L231)
 
 **Section sources**
-- [index.html:160-254](file://index.html#L160-L254)
-- [style.css:378-464](file://css/style.css#L378-L464)
+- [index.html:265-356](file://index.html#L265-L356)
+- [style.css:381-448](file://css/style.css#L381-L448)
 - [styles.css:121-127](file://assets/css/styles.css#L121-L127)
 - [main.js:200-231](file://js/main.js#L200-L231)
 
 ## Performance Considerations
 - Use efficient CSS Grid properties to minimize layout recalculations.
-- Keep feature lists concise to reduce rendering overhead.
+- Keep tag lists concise to reduce rendering overhead.
 - Avoid heavy animations on low-powered devices; rely on lightweight transitions.
 - Ensure images and icons are optimized for fast loading.
+- The tag-based system reduces complexity compared to traditional feature lists.
 
 ## Troubleshooting Guide
 Common issues and resolutions:
-- Cards not stacking on small screens: Verify the grid template and minimum column width settings.
+- Cards not stacking properly on small screens: Verify the grid template and column settings.
 - Hover effects not visible on mobile: Confirm that hover states are complemented by focus-visible styles for accessibility.
-- Featured badge misalignment: Check absolute positioning and ensure parent containers have relative positioning.
-- Inconsistent spacing: Review padding and gap values across cards and adjust to match the design system.
+- Wide card not spanning columns: Check the grid-column CSS property and ensure proper class application.
+- Tag overflow issues: Review tag wrapping and spacing settings across cards and adjust to match the design system.
 
 **Section sources**
 - [style.css:381-406](file://css/style.css#L381-L406)
+- [style.css:436-438](file://css/style.css#L436-L438)
 - [styles.css:121-127](file://assets/css/styles.css#L121-L127)
 
 ## Conclusion
-The Services Section is a well-structured, responsive component that effectively communicates specialized offerings through consistent HTML semantics, robust CSS Grid layout, and thoughtful visual enhancements. By following the provided guidelines, teams can easily add new services, customize content, and maintain a cohesive design across devices.
+The Profile Section is a well-structured, responsive component that effectively communicates instructor expertise through four comprehensive profile cards and a tag-based presentation system. The strategic transformation from specialized service categories to comprehensive instructor profiles reflects a shift toward showcasing holistic teaching capabilities and professional qualifications.
+
+The tag-based approach provides a clean, organized way to present complex information about language proficiency levels, international experience, learning objectives, and teaching methodologies. By following the provided guidelines, teams can easily add new profile categories, customize tag content, and maintain a cohesive design across devices while emphasizing the comprehensive teaching expertise that makes the instructor stand out in the competitive online English education market.

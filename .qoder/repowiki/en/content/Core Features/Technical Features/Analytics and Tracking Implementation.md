@@ -15,6 +15,13 @@
 - [app-ads.txt](file://app-ads.txt)
 </cite>
 
+## Update Summary
+**Changes Made**
+- Updated Google Analytics configuration from legacy tracking ID 'G-64H2XF537N' to unified GTAG ID 'GT-T9L6V7XZ'
+- Added dual GA4 configuration support with both new and legacy tracking IDs
+- Updated analytics implementation documentation to reflect the migration
+- Enhanced tracking configuration approach documentation
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Analytics Infrastructure Overview](#analytics-infrastructure-overview)
@@ -32,6 +39,8 @@
 The Michael | Inglês Executivo website implements a comprehensive analytics and tracking system designed specifically for English language instruction services targeting Brazilian professionals. This implementation focuses on measuring user engagement, conversion optimization, and performance monitoring while maintaining strict privacy compliance.
 
 The analytics infrastructure leverages Google Analytics 4 (GA4) as the primary tracking solution, complemented by custom event tracking for critical conversion points such as WhatsApp interactions and form submissions. The system is built to track the complete customer journey from initial awareness through consultation scheduling to successful enrollment.
+
+**Updated** The analytics system has undergone a migration from legacy tracking configuration to a unified Google Analytics 4 implementation, ensuring compatibility with modern tracking standards and improved data collection capabilities.
 
 ## Analytics Infrastructure Overview
 
@@ -85,7 +94,7 @@ The website integrates Google Analytics 4 through a dual implementation strategy
 
 ### GA4 Configuration
 
-The implementation utilizes Google Analytics 4 (Measurement ID: G-64H2XF537N) alongside Google Tag Manager (Container ID: GTM-W37S56NX) for centralized tag management.
+**Updated** The implementation utilizes Google Analytics 4 (Measurement ID: GT-T9L6V7XZ) alongside legacy tracking (Measurement ID: G-64H2XF537N) for backward compatibility during the migration period.
 
 ```mermaid
 sequenceDiagram
@@ -93,14 +102,17 @@ participant User as "Visitor"
 participant Page as "HTML Page"
 participant GTM as "Google Tag Manager"
 participant GA4 as "Google Analytics 4"
+participant Legacy as "Legacy Analytics"
 participant Server as "Analytics Server"
 User->>Page : Load Page
 Page->>GTM : Initialize Container
 GTM->>GA4 : Load gtag.js
 GA4->>Server : Send Page View
+GTM->>Legacy : Load Legacy gtag.js
+Legacy->>Server : Send Page View
 Server-->>GA4 : Acknowledge
 GA4-->>User : Analytics Active
-Note over User,Server : Enhanced Measurement Enabled
+Note over User,Server : Dual Tracking Active
 ```
 
 **Diagram sources**
@@ -108,9 +120,9 @@ Note over User,Server : Enhanced Measurement Enabled
 - [blog.html:11-18](file://blog.html#L11-L18)
 - [contact.html:11-18](file://contact.html#L11-L18)
 
-### Tag Management Architecture
+### Unified Tracking Migration
 
-The Google Tag Manager container provides centralized management of all tracking tags, enabling dynamic configuration updates without code changes.
+The analytics system has been migrated to use the unified GTAG ID 'GT-T9L6V7XZ' across all website pages, replacing the legacy 'G-64H2XF537N' tracking configuration. This migration ensures compatibility with Google Analytics 4's enhanced measurement capabilities while maintaining historical data continuity.
 
 **Section sources**
 - [index.html:4-18](file://index.html#L4-L18)
@@ -439,7 +451,7 @@ Phase3 --> PredictiveAnalytics
 
 ### Technology Stack Enhancement
 
-The current implementation provides a solid foundation for analytics tracking. Future enhancements could include:
+**Updated** The current implementation provides a solid foundation for analytics tracking with the unified GTAG ID 'GT-T9L6V7XZ'. Future enhancements could include:
 
 - **Real-time Analytics**: Implement real-time dashboards for immediate insights into user behavior
 - **Machine Learning Integration**: Leverage ML for predictive analytics and automated optimization
