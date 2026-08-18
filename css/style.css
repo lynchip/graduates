@@ -8,19 +8,22 @@
 }
 
 :root {
-    --primary-color: #154275;
-    --primary-dark: #0a2540;
-    --secondary-color: #25D366;
-    --secondary-dark: #128C7E;
-    --accent-color: #E67E22;
-    --text-dark: #2c3e50;
-    --text-light: #5a6c7d;
-    --bg-light: #f8f9fa;
+    --primary-color: #1e56a0;
+    --primary-dark: #0f2c59;
+    --primary-light: #eef4fc;
+    --accent-color: #d97706;
+    --accent-hover: #b45309;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --bg-light: #f8fafc;
     --bg-white: #ffffff;
-    --border-color: #e1e8ed;
-    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.15);
-    --transition: all 0.3s ease;
+    --border-color: #e2e8f0;
+    --shadow: 0 4px 12px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.08);
+    --shadow-hover: 0 12px 28px rgba(15, 23, 42, 0.12), 0 4px 10px rgba(15, 23, 42, 0.06);
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -319,14 +322,7 @@ body {
     transform: translateY(-2px);
 }
 
-.btn-whatsapp {
-    background: #25D366;
-    color: white;
-}
 
-.btn-whatsapp:hover {
-    background: #1fb855;
-}
 
 .btn-large {
     padding: 1.125rem 2.5rem;
@@ -813,21 +809,28 @@ section {
    Audio Section
    =================================== */
 .audio-section {
-    padding: 2rem 0;
+    padding: 3rem 0;
     background: var(--bg-white);
 }
 
 .audio-box {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-left: 5px solid var(--primary-color);
-    border-radius: 10px;
-    padding: 2rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+    border: 1px solid var(--border-color);
+    border-left: 6px solid var(--primary-color);
+    border-radius: var(--radius-md);
+    padding: 2.25rem;
     display: flex;
     align-items: center;
     gap: 2rem;
     box-shadow: var(--shadow);
     max-width: 900px;
     margin: 0 auto;
+    transition: var(--transition);
+}
+
+.audio-box:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
 }
 
 .audio-icon {
@@ -1229,44 +1232,6 @@ section {
 }
 
 /* ===================================
-   Floating WhatsApp Button
-   =================================== */
-.whatsapp-float {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background: #25D366;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.75rem;
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-    z-index: 999;
-    transition: var(--transition);
-    animation: pulse 2s infinite;
-}
-
-.whatsapp-float:hover {
-    background: #1fb855;
-    transform: scale(1.1);
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-    }
-
-    50% {
-        box-shadow: 0 4px 25px rgba(37, 211, 102, 0.6);
-    }
-
-    100% {
-        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-    }
 }
 
 /* ===================================
@@ -1334,14 +1299,6 @@ section {
     .contact-info,
     .contact-form-container {
         padding: 1.5rem;
-    }
-
-    .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-        bottom: 20px;
-        right: 20px;
     }
 }
 

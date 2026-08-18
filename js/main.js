@@ -260,17 +260,6 @@ function updateActiveNavLink() {
 window.addEventListener('scroll', updateActiveNavLink);
 
 // ===================================
-// WhatsApp Button Tracking
-// ===================================
-const whatsappButtons = document.querySelectorAll('a[href*="wa.me"]');
-whatsappButtons.forEach(button => {
-    button.addEventListener('click', function () {
-        console.log('WhatsApp contact initiated from:', this.getAttribute('href'));
-        // You can add analytics tracking here if needed
-    });
-});
-
-// ===================================
 // Form Input Validation
 // ===================================
 const emailInput = document.getElementById('email');
@@ -308,7 +297,6 @@ function setFormLoading(form, isLoading) {
 // ===================================
 console.log('%c👋 Olá! ', 'font-size: 20px; font-weight: bold; color: #1e56a0;');
 console.log('%cSite desenvolvido para Michael | Inglês Executivo', 'font-size: 12px; color: #5a6c7d;');
-console.log('%cPara contato via WhatsApp: (11) 99600-5326', 'font-size: 12px; color: #28a745;');
 
 // ===================================
 // Service Worker Registration (Optional)
