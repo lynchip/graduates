@@ -150,138 +150,113 @@ body {
    Hero Section
    =================================== */
 .hero {
-    background: linear-gradient(135deg, #1e56a0 0%, #163e6f 100%);
+    background: linear-gradient(135deg, #16427b 0%, #0d284c 100%);
     color: white;
-    padding: 5rem 2rem;
+    padding: 7rem 4rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 5rem;
     align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 640px;
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 3.25rem;
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
 }
 
 .highlight {
-    color: var(--accent-color);
+    color: #fbbf24;
+    font-weight: 700;
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    opacity: 0.95;
-}
-
-.hero-methodology {
-    margin-bottom: 2rem;
-}
-
-.hero-methodology h2 {
     font-size: 1.2rem;
-    margin-bottom: 0.75rem;
-}
-
-.hero-methodology ul {
-    list-style: disc inside;
-    margin: 0;
-    padding-left: 1rem;
-    margin-bottom: 0.75rem;
-}
-
-.hero-methodology-note {
-    font-size: 1rem;
-    opacity: 0.95;
-}
-
-.about-methodology {
-    margin-top: 1rem;
-    font-style: italic;
-    opacity: 0.95;
-}
-
-.hero-faq-card {
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 18px;
-    padding: 1rem 1.25rem;
-    margin-bottom: 1rem;
-}
-
-.hero-faq-question {
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.hero-faq-answer {
-    margin: 0;
-    line-height: 1.5;
+    line-height: 1.75;
+    margin-bottom: 2.75rem;
+    opacity: 0.9;
+    font-weight: 400;
 }
 
 .hero-badges {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    gap: 0.875rem;
+    margin-bottom: 2.75rem;
 }
 
 .badge {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0.6rem 1.25rem;
+    border-radius: 30px;
     font-size: 0.875rem;
+    font-weight: 500;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.6rem;
+    letter-spacing: 0.01em;
 }
 
 .hero-cta {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    margin-bottom: 0.75rem;
 }
 
 .hero-cta-note {
-    margin-top: 1rem;
-    font-size: 0.95rem;
-    opacity: 0.9;
+    font-size: 0.9rem;
+    opacity: 0.75;
+    letter-spacing: 0.01em;
 }
 
 .hero-image {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
 }
 
 .hero-card {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    padding: 1.5rem;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    padding: 1.75rem 1.5rem;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: var(--transition);
+}
+
+.hero-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.25);
 }
 
 .hero-card i {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: var(--accent-color);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #fbbf24;
 }
 
 .hero-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
+    line-height: 1.35;
 }
 
 .hero-card p {
-    opacity: 0.9;
-    font-size: 0.95rem;
+    opacity: 0.8;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 /* ===================================
@@ -1240,7 +1215,12 @@ section {
 @media (max-width: 992px) {
     .hero {
         grid-template-columns: 1fr;
-        padding: 3rem 1.5rem;
+        padding: 5rem 2rem;
+        gap: 3.5rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
     }
 
     .about-content {
@@ -1252,6 +1232,12 @@ section {
     }
 
     .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-image {
         grid-template-columns: 1fr;
     }
 }
