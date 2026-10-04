@@ -1,15 +1,15 @@
 /* Neo-Brutalist / Joan Miró Bento Grid — self-contained stylesheet */
 
 :root {
-    --paper: #FBF6EA;
-    --ink: #111111;
-    --red: #D62718;
-    --blue: #1D3FB8;
-    --yellow: #FFD60A;
-    --pink: #FF8FC0;
-    --border: 4px solid var(--ink);
-    --shadow: 7px 7px 0 var(--ink);
-    --gap: 24px;
+    --paper: #FAF3E3;
+    --ink: #1B1B24;
+    --red: #E8604A;
+    --blue: #3156B8;
+    --yellow: #F8D04A;
+    --pink: #F5A9C4;
+    --border: 2px solid var(--ink);
+    --shadow: 6px 6px 0 rgba(27, 27, 36, .16);
+    --gap: 22px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -238,4 +238,52 @@ audio { width: 100%; margin-top: 8px; }
 
 @media (prefers-reduced-motion: reduce) {
     * { transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* =====================================================
+   Softer Miró theme (overrides)
+   ===================================================== */
+body { position: relative; }
+body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: .5;
+    background-repeat: no-repeat;
+    background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M60 6l9 38 38-9-30 26 30 26-38-9-9 38-9-38-38 9 30-26-30-26 38 9z' fill='%231B1B24'/%3E%3C/svg%3E"),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'%3E%3Cpath d='M4 30c20-40 30 40 50 0s30 40 50 0 30 40 50 0 30 40 40 10' fill='none' stroke='%231B1B24' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E"),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Ccircle cx='45' cy='45' r='38' fill='%23E8604A'/%3E%3C/svg%3E");
+    background-size: 90px, 170px, 70px;
+    background-position: 2% 12%, 98% 55%, 4% 88%;
+}
+.bento { position: relative; z-index: 1; }
+
+.box { padding: clamp(26px, 3.4vw, 46px); }
+.r1 { border-radius: 90px 36px 100px 44px; }
+.r2 { border-radius: 40px 100px 48px 84px; }
+.r3 { border-radius: 100px 44px 36px 90px; }
+.r4 { border-radius: 44px 80px 100px 34px; }
+.r5 { border-radius: 70px 110px 40px 80px; }
+
+.red { color: var(--ink); }
+.black { background: #2A2A3C; box-shadow: var(--shadow); }
+.nav-menu a { border-width: 2px; border-radius: 30px; }
+.nav-menu a.cta { color: var(--ink); background: var(--red); }
+.nav-menu a.cta:hover { background: var(--pink); }
+.tag-list li { border-width: 2px; border-radius: 30px; }
+.red .tag-list li, .blue .tag-list li, .black .tag-list li { box-shadow: none; }
+.btn { border-width: 2px; border-radius: 40px; box-shadow: 3px 3px 0 rgba(27,27,36,.25); }
+.btn:hover { box-shadow: 5px 5px 0 rgba(27,27,36,.3); }
+.eyebrow { border-radius: 30px; }
+.highlight { border-radius: 30px; }
+.dot { border-width: 2px; }
+.red .stars { color: var(--ink); }
+.note { border-top-width: 2px; }
+.feature-list li { border-bottom-width: 2px; }
+.feature-list li::before { border-width: 2px; }
+.footer-bottom { border-top: 2px dashed rgba(255,255,255,.5); }
+.black .eyebrow, .blue .eyebrow { background: var(--yellow); }
+
+@media (max-width: 680px) {
+    :root { --shadow: 4px 4px 0 rgba(27, 27, 36, .16); }
+    .r1, .r2, .r3, .r4, .r5 { border-radius: 48px 24px 54px 28px; }
+    .black { box-shadow: var(--shadow); }
 }
