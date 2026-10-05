@@ -30,272 +30,258 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Shantell+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <a class="skip-link" href="#home">Ir para o conteúdo</a>
+    <a class="skip" href="#home">Ir para o conteúdo</a>
 
-    <main class="bento">
-
-        <!-- Header & Navigation -->
-        <header class="box yellow r1 s12 nav-box">
-            <div class="brand">
-                <span class="brand-logo" aria-hidden="true">M</span>
-                <span>
-                    <span class="brand-name">Michael | Inglês com Professor Nativo</span>
-                    <span class="brand-tagline">Inglês no seu ritmo</span>
-                </span>
-            </div>
+    <header class="top">
+        <div class="canvas">
+            <a class="brand" href="#home">Michael | Inglês com Professor Nativo<small>Inglês no seu ritmo</small></a>
             <nav aria-label="Navegação principal">
-                <ul class="nav-menu">
+                <ul class="nav">
                     <li><a href="#home">Início</a></li>
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#methodology">Metodologia</a></li>
                     <li><a href="#testimonials">Depoimentos</a></li>
                     <li><a href="#pricing">Preço</a></li>
-                    <li><a href="contact.html" class="cta">Contato</a></li>
+                    <li><a href="contact.html" class="contact">Contato</a></li>
                 </ul>
             </nav>
-        </header>
-
-        <!-- Hero -->
-        <section id="home" class="box red r3 s8">
-            <span class="eyebrow">Aulas Individuais Online</span>
-            <h1>Fale Inglês com <span class="highlight">Confiança</span></h1>
-            <p class="lead">Aulas individuais com professor nativo para quem precisa do inglês no trabalho ou quer se
-                comunicar melhor com clientes, no dia a dia e em viagens.</p>
-            <div class="btn-row">
-                <a href="contact.html" class="btn">Agendar Consulta Gratuita</a>
-                <a href="#audio" class="btn alt">Ouvir Apresentação</a>
-            </div>
-            <p class="note">Consulta gratuita de 40 minutos: conversamos sobre seus objetivos e dúvidas, com um
-                bate-papo informal em inglês — sem teste e sem compromisso.</p>
-        </section>
-
-        <!-- Audio Sample -->
-        <section id="audio" class="box pink r2 s4">
-            <h2>Ouça o professor</h2>
-            <p>Clique abaixo para ouvir uma breve apresentação.</p>
-            <audio controls>
-                <source src="audio/intro_sample.mp3" type="audio/mpeg">
-                Seu navegador não suporta o elemento de áudio.
-            </audio>
-        </section>
-
-        <!-- Feature cards -->
-        <section class="box blue r4 s3" aria-labelledby="f1">
-            <span class="dot c" aria-hidden="true"></span>
-            <h3 id="f1">Aulas 100% Individuais</h3>
-            <p>Cada aula é planejada para o seu contexto e objetivo</p>
-        </section>
-        <section class="box yellow r5 s3" aria-labelledby="f2">
-            <span class="dot t" aria-hidden="true"></span>
-            <h3 id="f2">Professor Nativo</h3>
-            <p>Pronúncia e expressões usadas no dia a dia</p>
-        </section>
-        <section class="box pink r1 s3" aria-labelledby="f3">
-            <span class="dot q" aria-hidden="true"></span>
-            <h3 id="f3">Foco na Conversação</h3>
-            <p>Prática para o trabalho, conversas com clientes e viagens</p>
-        </section>
-        <section class="box black r2 s3" aria-labelledby="f4">
-            <span class="dot h" aria-hidden="true"></span>
-            <h3 id="f4">A partir do Intermediário</h3>
-            <p>Para quem já tem a base e quer se comunicar com mais confiança</p>
-        </section>
-
-        <!-- About -->
-        <section id="about" class="box blue r5 s12">
-            <span class="eyebrow">Sobre o Professor</span>
-            <h2>Mais que Aulas: Uma Parceria de Aprendizado</h2>
-        </section>
-
-        <blockquote class="box black r3 s7" style="margin:0">
-            <span class="quote-mark" aria-hidden="true">“</span>
-            <p class="quote-text">Sou nativo de inglês, morando no Brasil há 26 anos e falo português fluente. Minha
-                prioridade é criar um ambiente onde você se sinta à vontade para praticar, errar e evoluir no seu ritmo.
-            </p>
-            <p class="quote-author">Michael | Inglês com Professor Nativo</p>
-        </blockquote>
-
-        <div class="s5" style="display:grid; gap:var(--gap);">
-            <article class="box yellow r2">
-                <h4>Décadas de Experiência em Vendas</h4>
-                <p>Aprendi como a comunicação clara ajuda a criar oportunidades e gerar resultados.</p>
-            </article>
-            <article class="box pink r4">
-                <h4>Certificação TEFL</h4>
-                <p>Formação para ensinar inglês como língua estrangeira</p>
-            </article>
         </div>
+    </header>
 
-        <!-- Methodology -->
-        <section id="methodology" class="box yellow r1 s12">
-            <span class="eyebrow">Metodologia</span>
-            <h2>Foco em Alunos Intermediários e Avançados</h2>
-            <p class="lead">Começamos com um texto que desafia você na medida certa. Conversamos sobre o tema e
-                trabalhamos as dúvidas e dificuldades que surgem. Também conversamos sobre ideias que podem estar
-                dificultando seu progresso no inglês. A proposta é que, já no primeiro mês, você perceba seu progresso e
-                se sinta no caminho certo para se comunicar melhor em inglês.</p>
-        </section>
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <span class="s wash" style="width:520px;height:420px;background:var(--yellow);right:-120px;top:40px" aria-hidden="true"></span>
+            <div class="canvas">
+                <span class="s c bob" style="width:150px;height:150px;background:var(--blue);right:6%;top:20px" aria-hidden="true"></span>
+                <span class="s line hide-sm" style="width:260px;right:15%;top:150px;transform:rotate(132deg)" aria-hidden="true"></span>
+                <span class="s c hide-sm" style="width:16px;height:16px;background:var(--ink);right:30.5%;top:318px" aria-hidden="true"></span>
+                <span class="s star bob b2 hide-sm" style="right:10%;top:300px" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                <span class="s moon hide-sm" style="width:60px;height:60px;box-shadow:-14px 6px 0 0 var(--ink);right:2%;top:420px" aria-hidden="true"></span>
+                <span class="s eye bob b3 hide-sm" style="width:74px;height:36px;right:22%;top:470px" aria-hidden="true"></span>
+                <span class="s c hide-sm" style="width:34px;height:34px;background:var(--green);right:14%;top:560px" aria-hidden="true"></span>
 
-        <section class="box red r2 s6" aria-labelledby="p1">
-            <h3 id="p1">Público Indicado</h3>
-            <ul class="tag-list">
-                <li>Intermediário (B1/B2)</li>
-                <li>Avançado (C1/C2)</li>
-                <li>Profissionais que precisam do inglês no trabalho</li>
-                <li>Quem quer se comunicar melhor no dia a dia</li>
-            </ul>
-        </section>
-        <section class="box blue r4 s6" aria-labelledby="p2">
-            <h3 id="p2">Habilidades Desenvolvidas</h3>
-            <ul class="tag-list">
-                <li>Pronúncia clara</li>
-                <li>Compreensão Auditiva</li>
-                <li>Conversação com confiança</li>
-                <li>Vocabulário do dia a dia</li>
-                <li>Expressão de ideias</li>
-            </ul>
-        </section>
-        <section class="box pink r3 s6" aria-labelledby="p3">
-            <h3 id="p3">Situações de Uso</h3>
-            <ul class="tag-list">
-                <li>Reuniões e Apresentações</li>
-                <li>Conversas com clientes</li>
-                <li>E-mails e Documentos</li>
-                <li>Conversas do dia a dia</li>
-                <li>Viagens Internacionais</li>
-            </ul>
-        </section>
-        <section class="box black r5 s6" aria-labelledby="p4">
-            <h3 id="p4">Diferenciais do Ensino</h3>
-            <ul class="tag-list">
-                <li>Professor Nativo com Fluência em Português</li>
-                <li>Correção Gentil e Encorajadora</li>
-                <li>Conteúdo Adaptado ao Seu Dia a Dia</li>
-            </ul>
-        </section>
-
-        <!-- Testimonials -->
-        <section id="testimonials" class="box pink r2 s12">
-            <span class="eyebrow">Depoimentos</span>
-            <h2>O Que Meus Alunos Dizem</h2>
-        </section>
-
-        <figure class="box yellow r1 s4" style="margin:0">
-            <div class="stars" role="img" aria-label="5 estrelas">★★★★★</div>
-            <p class="testimonial-text">"Ontem, fiz uma ligação para um prestador de serviços em inglês e foi incrível.
-                Foi a primeira vez que tive a oportunidade de conversar sobre meu trabalho. Enfim, graças a você foi
-                possível fazer isso."</p>
-            <figcaption class="author">
-                <span class="avatar" aria-hidden="true">A</span>
-                <div>
-                    <h4>Allana</h4>
-                    <p>IT Consultant</p>
+                <span class="eyebrow">Aulas Individuais Online</span>
+                <h1>Fale Inglês com <span class="conf">Confiança</span></h1>
+                <p class="promise">Pronúncia clara e inglês prático — <span>para você ser entendido de verdade.</span></p>
+                <p class="lead">Aulas individuais com professor nativo para quem precisa do inglês no trabalho ou quer se comunicar melhor com clientes, no dia a dia e em viagens.</p>
+                <div class="go">
+                    <a href="contact.html" class="hand-link"><span class="blob"></span><u>Agendar Consulta Gratuita</u></a>
+                    <a href="#audio" class="hand-link blue"><span class="blob"></span><u>Ouvir Apresentação</u></a>
                 </div>
-            </figcaption>
-        </figure>
-        <figure class="box blue r4 s4" style="margin:0">
-            <div class="stars" role="img" aria-label="5 estrelas">★★★★★</div>
-            <p class="testimonial-text">"Boa tarde Michael, tudo bem??? Fiz uma entrevista em inglês para uma vaga em
-                TI, eu passei e agora estou indo para uma entrevista final. Eu queria te agradecer pelas dicas"</p>
-            <figcaption class="author">
-                <span class="avatar" aria-hidden="true">M</span>
-                <div>
-                    <h4>Mauricio</h4>
-                    <p>Database Administrator</p>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="box red r3 s4" style="margin:0">
-            <div class="stars" role="img" aria-label="5 estrelas">★★★★★</div>
-            <p class="testimonial-text">"Your classes make me feel good about my English, thank you very much!! You are
-                the best!!"</p>
-            <figcaption class="author">
-                <span class="avatar" aria-hidden="true">J</span>
-                <div>
-                    <h4>Juliana</h4>
-                    <p>Onboarding Specialist</p>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="box black r5 s12" style="margin:0">
-            <div class="stars" role="img" aria-label="5 estrelas">★★★★★</div>
-            <p class="testimonial-text">"Excelente metodologia! Graças ao Professor Michael, hoje tenho autonomia para
-                ver vídeos e ouvir podcasts sem legendas. Recentemente, em uma viagem pela Europa, coloquei tudo em
-                prática e a comunicação fluiu sem receios, consegui me expressar e entender tudo com clareza, sem o medo
-                de não ser compreendido. A forma como o conteúdo é entregue realmente facilita a expressão e a escuta.
-                Além disso, a forma como o professor nos acolhe ajuda a não sentir medo em arriscar e cometer erros.
-                Recomendo muito!"</p>
-            <figcaption class="author">
-                <span class="avatar" aria-hidden="true" style="background:var(--yellow);color:var(--ink)">F</span>
-                <div>
-                    <h4>Fernando</h4>
-                    <p>Profissional — Minas Gerais</p>
-                </div>
-            </figcaption>
-        </figure>
-
-        <!-- Pricing -->
-        <section id="pricing" class="box red r4 s5">
-            <span class="eyebrow">Preço</span>
-            <h2>Preço Único e Transparente</h2>
-            <p class="lead">Sem pacotes confusos. Sem taxas escondidas. Sem contratos longos.</p>
-        </section>
-
-        <section class="box yellow r1 s7" aria-labelledby="price-title">
-            <h3 id="price-title">Aula Individual</h3>
-            <div class="price">
-                <span class="currency">R$</span>
-                <span class="amount">65</span>
-                <span class="period">/ aula</span>
+                <p class="small-note">Consulta gratuita de 40 minutos: conversamos sobre seus objetivos e dúvidas, com um bate-papo informal em inglês — sem teste e sem compromisso.</p>
             </div>
-            <ul class="feature-list">
-                <li>50 minutos de aula individual</li>
-                <li>Conteúdo 100% personalizado</li>
-                <li>Aulas pelo Google Meet</li>
-                <li>Uma ou duas aulas por semana</li>
-                <li>Pagamento via PIX ou transferência</li>
-            </ul>
-            <div class="btn-row">
-                <a href="contact.html" class="btn pinkbtn">Agendar Consulta Gratuita</a>
-            </div>
-            <p class="note">Consulta gratuita de 40 minutos: conversamos sobre seus objetivos e dúvidas, com um
-                bate-papo informal em inglês — sem teste e sem compromisso.</p>
         </section>
 
-        <!-- Footer -->
-        <footer class="box black r3 s12">
-            <div class="footer-grid">
-                <div>
-                    <h3>Michael | Inglês com Professor Nativo</h3>
-                    <p>Professor Nativo de Inglês<br>São Paulo, Brasil</p>
-                </div>
-                <div>
-                    <h4>Navegação</h4>
-                    <ul>
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#about">Sobre</a></li>
-                        <li><a href="#methodology">Metodologia</a></li>
-                        <li><a href="#testimonials">Depoimentos</a></li>
-                        <li><a href="#pricing">Preço</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contato</h4>
-                    <p><a href="contact.html">Contato</a></p>
+        <!-- LISTEN -->
+        <section class="listen" id="audio">
+            <div class="canvas">
+                <span class="s arc hide-sm" style="width:200px;height:200px;left:-40px;top:-30px;transform:rotate(-30deg)" aria-hidden="true"></span>
+                <div class="row">
+                    <button class="play" id="playBtn" aria-label="Tocar apresentação"><span class="play-ring" aria-hidden="true"></span></button>
+                    <div>
+                        <h2>Ouça o professor</h2>
+                        <p>Clique abaixo para ouvir uma breve apresentação.</p>
+                        <div class="track" id="track" role="slider" aria-label="Progresso do áudio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0"><span class="head" id="head"></span></div>
+                        <div class="time" id="time">0:00</div>
+                        <audio id="audio-el" preload="metadata">
+                            <source src="audio/intro_sample.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2001 to 2026 Michael | Inglês com Professor Nativo. Todos os direitos reservados.</p>
-            </div>
-        </footer>
+        </section>
 
+        <!-- FOUR -->
+        <section class="four">
+            <div class="canvas">
+                <div class="grid">
+                    <div class="thing t1">
+                        <span class="s c" style="width:48px;height:48px;background:var(--red);top:0;left:0" aria-hidden="true"></span>
+                        <h3>Aulas 100% Individuais</h3>
+                        <p>Cada aula é planejada para o seu contexto e objetivo</p>
+                    </div>
+                    <div class="thing t2">
+                        <span class="s moon" style="width:46px;height:46px;box-shadow:12px 0 0 0 var(--blue);top:0;left:0" aria-hidden="true"></span>
+                        <h3>Professor Nativo</h3>
+                        <p>Pronúncia e expressões usadas no dia a dia</p>
+                    </div>
+                    <div class="thing t3">
+                        <span class="s star" style="top:2px;left:4px" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                        <h3>Foco na Conversação</h3>
+                        <p>Prática para o trabalho, conversas com clientes e viagens</p>
+                    </div>
+                    <div class="thing t4">
+                        <span class="s" style="width:56px;height:28px;background:var(--yellow);border-radius:999px 999px 0 0;top:16px;left:0" aria-hidden="true"></span>
+                        <h3>A partir do Intermediário</h3>
+                        <p>Para quem já tem a base e quer se comunicar com mais confiança</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <span class="s wash" style="width:460px;height:380px;background:var(--blue);left:-180px;top:180px;opacity:.16" aria-hidden="true"></span>
+            <div class="canvas">
+                <span class="kicker">Sobre o Professor</span>
+                <h2>Mais que Aulas: Uma Parceria de Aprendizado</h2>
+                <blockquote class="says" style="margin-inline-end:0">
+                    <span class="s c" style="width:26px;height:26px;background:var(--red);left:-56px;top:12px" aria-hidden="true"></span>
+                    “Sou nativo de inglês, morando no Brasil há 26 anos e falo português fluente. Minha prioridade é criar um ambiente onde você se sinta à vontade para praticar, errar e evoluir no seu ritmo.”
+                    <span class="who">Michael | Inglês com Professor Nativo</span>
+                </blockquote>
+                <div class="bits">
+                    <article class="bit">
+                        <span class="s c" style="width:34px;height:34px;background:var(--yellow);border:2.5px solid var(--ink)" aria-hidden="true"></span>
+                        <h4>Décadas de Experiência em Vendas</h4>
+                        <p>Aprendi como a comunicação clara ajuda a criar oportunidades e gerar resultados.</p>
+                    </article>
+                    <article class="bit">
+                        <span class="s eye" style="width:40px;height:22px;top:8px" aria-hidden="true"></span>
+                        <h4>Certificação TEFL</h4>
+                        <p>Formação para ensinar inglês como língua estrangeira</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- METHOD -->
+        <section class="method" id="methodology">
+            <div class="canvas">
+                <img class="drawing d-speak" src="assets/img/draw-speak-t.png" alt="" aria-hidden="true">
+                <span class="kicker">Metodologia</span>
+                <h2 class="ask">Foco em Alunos Intermediários e Avançados</h2>
+                <p class="text">Começamos com um texto que desafia você na medida certa. Conversamos sobre o tema e trabalhamos as dúvidas e dificuldades que surgem. Também conversamos sobre ideias que podem estar dificultando seu progresso no inglês. A proposta é que, já no primeiro mês, você perceba seu progresso e se sinta no caminho certo para se comunicar melhor em inglês.</p>
+
+                <div class="clouds">
+                    <section class="cloud" aria-labelledby="p1">
+                        <h3 id="p1"><span class="mk" style="background:var(--red)"></span>Público Indicado</h3>
+                        <ul><li>Intermediário (B1/B2)</li><li>Avançado (C1/C2)</li><li>Profissionais que precisam do inglês no trabalho</li><li>Quem quer se comunicar melhor no dia a dia</li></ul>
+                    </section>
+                    <section class="cloud" aria-labelledby="p2">
+                        <h3 id="p2"><span class="mk" style="background:var(--blue)"></span>Habilidades Desenvolvidas</h3>
+                        <ul><li>Pronúncia clara</li><li>Compreensão Auditiva</li><li>Conversação com confiança</li><li>Vocabulário do dia a dia</li><li>Expressão de ideias</li></ul>
+                    </section>
+                    <section class="cloud" aria-labelledby="p3">
+                        <h3 id="p3"><span class="mk" style="background:var(--yellow);border:2.5px solid var(--ink)"></span>Situações de Uso</h3>
+                        <ul><li>Reuniões e Apresentações</li><li>Conversas com clientes</li><li>E-mails e Documentos</li><li>Conversas do dia a dia</li><li>Viagens Internacionais</li></ul>
+                    </section>
+                    <section class="cloud" aria-labelledby="p4">
+                        <h3 id="p4"><span class="mk" style="background:var(--green)"></span>Diferenciais do Ensino</h3>
+                        <ul><li>Professor Nativo com Fluência em Português</li><li>Correção Gentil e Encorajadora</li><li>Conteúdo Adaptado ao Seu Dia a Dia</li></ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- VOICES -->
+        <section class="voices" id="testimonials">
+            <div class="canvas">
+                <img class="drawing d-cups" src="assets/img/draw-cups-t.png" alt="" aria-hidden="true">
+                <span class="kicker">Depoimentos</span>
+                <h2>O Que Meus Alunos Dizem</h2>
+                <div class="scraps">
+                    <figure class="scrap sc1">
+                        <span class="pin" style="background:var(--red)" aria-hidden="true"></span>
+                        <div class="stars" role="img" aria-label="5 estrelas">★★★★★</div>
+                        <blockquote>"Ontem, fiz uma ligação para um prestador de serviços em inglês e foi incrível. Foi a primeira vez que tive a oportunidade de conversar sobre meu trabalho. Enfim, graças a você foi possível fazer isso."</blockquote>
+                        <figcaption>Allana<span>IT Consultant</span></figcaption>
+                    </figure>
+                    <figure class="scrap sc2">
+                        <span class="pin" style="background:var(--blue)" aria-hidden="true"></span>
+                        <div class="stars" role="img" aria-label="5 estrelas">★★★★★</div>
+                        <blockquote>"Boa tarde Michael, tudo bem??? Fiz uma entrevista em inglês para uma vaga em TI, eu passei e agora estou indo para uma entrevista final. Eu queria te agradecer pelas dicas"</blockquote>
+                        <figcaption>Mauricio<span>Database Administrator</span></figcaption>
+                    </figure>
+                    <figure class="scrap sc3">
+                        <span class="pin" style="background:var(--yellow)" aria-hidden="true"></span>
+                        <div class="stars" role="img" aria-label="5 estrelas">★★★★★</div>
+                        <blockquote>"Your classes make me feel good about my English, thank you very much!! You are the best!!"</blockquote>
+                        <figcaption>Juliana<span>Onboarding Specialist</span></figcaption>
+                    </figure>
+                    <figure class="scrap sc4">
+                        <span class="pin" style="background:var(--green)" aria-hidden="true"></span>
+                        <div class="stars" role="img" aria-label="5 estrelas">★★★★★</div>
+                        <blockquote>"Excelente metodologia! Graças ao Professor Michael, hoje tenho autonomia para ver vídeos e ouvir podcasts sem legendas. Recentemente, em uma viagem pela Europa, coloquei tudo em prática e a comunicação fluiu sem receios, consegui me expressar e entender tudo com clareza, sem o medo de não ser compreendido. A forma como o conteúdo é entregue realmente facilita a expressão e a escuta. Além disso, a forma como o professor nos acolhe ajuda a não sentir medo em arriscar e cometer erros. Recomendo muito!"</blockquote>
+                        <figcaption>Fernando<span>Profissional — Minas Gerais</span></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICE -->
+        <section class="price" id="pricing">
+            <span class="s wash" style="width:500px;height:400px;background:var(--red);right:-200px;top:120px;opacity:.14" aria-hidden="true"></span>
+            <div class="canvas">
+                <span class="kicker">Preço</span>
+                <h2>Preço Único e Transparente</h2>
+                <p class="sub">Sem pacotes confusos. Sem taxas escondidas. Sem contratos longos.</p>
+                <div class="price-wrap">
+                    <div class="sun">
+                        <span class="ray" aria-hidden="true"></span><span class="ray" aria-hidden="true"></span>
+                        <span class="disc" aria-hidden="true"></span>
+                        <div class="num"><b><sup>R$</sup>65</b><small>/ aula</small></div>
+                    </div>
+                    <div class="price-text">
+                        <h3>Aula Individual</h3>
+                        <p class="flow">
+                            <span>50 minutos de aula individual</span><i style="background:var(--red)"></i>
+                            <span>Conteúdo 100% personalizado</span><i style="background:var(--blue)"></i>
+                            <span>Aulas pelo Google Meet</span><i style="background:var(--yellow)"></i>
+                            <span>Uma ou duas aulas por semana</span><i style="background:var(--green)"></i>
+                            <span>Pagamento via PIX ou transferência</span>
+                        </p>
+                        <div class="go" style="margin-top:36px">
+                            <a href="contact.html" class="hand-link"><span class="blob"></span><u>Agendar Consulta Gratuita</u></a>
+                        </div>
+                        <p class="small-note" style="margin-top:28px">Consulta gratuita de 40 minutos: conversamos sobre seus objetivos e dúvidas, com um bate-papo informal em inglês — sem teste e sem compromisso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="foot">
+        <div class="canvas">
+            <span>Michael | Inglês com Professor Nativo · Professor Nativo de Inglês, São Paulo, Brasil</span>
+            <nav aria-label="Rodapé">
+                <a href="#home">Início</a>
+                <a href="#about">Sobre</a>
+                <a href="#methodology">Metodologia</a>
+                <a href="#testimonials">Depoimentos</a>
+                <a href="#pricing">Preço</a>
+                <a href="contact.html">Contato</a>
+            </nav>
+            <span>&copy; 2001 to 2026 Michael | Inglês com Professor Nativo. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const a = document.getElementById('audio-el'), btn = document.getElementById('playBtn'),
+                track = document.getElementById('track'), head = document.getElementById('head'), time = document.getElementById('time');
+            const fmt = s => isFinite(s) ? Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0') : '0:00';
+            btn.addEventListener('click', () => { a.paused ? a.play().catch(() => { }) : a.pause() });
+            a.addEventListener('play', () => { btn.classList.add('on'); btn.setAttribute('aria-label', 'Pausar') });
+            a.addEventListener('pause', () => { btn.classList.remove('on'); btn.setAttribute('aria-label', 'Tocar apresentação') });
+            a.addEventListener('loadedmetadata', () => time.textContent = '0:00 / ' + fmt(a.duration));
+            a.addEventListener('timeupdate', () => {
+                const p = a.duration ? a.currentTime / a.duration * 100 : 0;
+                head.style.left = p + '%'; track.setAttribute('aria-valuenow', Math.round(p));
+                time.textContent = fmt(a.currentTime) + (a.duration ? ' / ' + fmt(a.duration) : '');
+            });
+            track.addEventListener('click', e => { const r = track.getBoundingClientRect(); if (a.duration) a.currentTime = (e.clientX - r.left) / r.width * a.duration });
+            track.addEventListener('keydown', e => { if (!a.duration) return; if (e.key === 'ArrowRight') a.currentTime += 5; if (e.key === 'ArrowLeft') a.currentTime -= 5 });
+        })();
+    </script>
 </body>
 
 </html>
