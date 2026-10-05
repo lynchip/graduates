@@ -229,3 +229,23 @@ h1,h2,h3,h4{font-family:var(--hand);font-weight:500;margin:0;line-height:1.15;te
 @media (max-width:860px) and (min-width:561px){
   .method,.voices{padding:90px 0}
 }
+
+/* ---------- tighter vertical rhythm (desktop/tablet) ---------- */
+@media (min-width:561px){
+  .hero{padding:84px 0 40px}
+  .listen{padding:36px 0 56px}
+  .four{padding:36px 0 64px}
+  .four .grid{row-gap:50px}
+  .t2{margin-top:60px}.t4{margin-top:40px}
+  .about,.method,.voices{padding:80px 0}
+  .about .says{margin-top:52px}
+  .about .bits{margin-top:56px}
+  .method .text{margin-top:34px}
+  .clouds{margin-top:60px;gap:50px 80px}
+  .cloud:nth-child(2),.cloud:nth-child(4){margin-top:40px}
+  .scraps{margin-top:52px;gap:44px 28px}
+  .price{padding:84px 0 80px}
+  .price-wrap{margin-top:48px}
+}
+.foot{padding:28px 0 56px}
+.foot .canvas{gap:10px 24px}
