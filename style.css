@@ -202,3 +202,14 @@ h1,h2,h3,h4{font-family:var(--hand);font-weight:500;margin:0;line-height:1.15;te
 .foot .canvas{align-items:center}
 .foot a{padding:4px 0}
 @media (max-width:560px){.nav{gap:4px 16px;font-size:15px}}
+
+/* ---------- floating WhatsApp ---------- */
+.wa{position:fixed;right:26px;bottom:26px;z-index:20;display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink)}
+.wa-note{font-family:var(--hand);font-size:18px;line-height:1.2;background:#FBF7EE;padding:12px 18px;border-radius:18px 18px 4px 18px;box-shadow:0 10px 26px -14px rgba(60,40,20,.5);transform:rotate(-2deg);transition:transform .25s}
+.wa-note small{display:block;font-family:var(--body);font-size:13px;color:var(--soft);margin-top:2px}
+.wa-dot{width:66px;height:66px;border-radius:50%;background:#25A35A;display:grid;place-items:center;flex:none;transition:transform .25s;box-shadow:0 10px 24px -10px rgba(20,80,40,.6)}
+.wa-bubble{position:relative;width:30px;height:24px;border-radius:50%;border:3px solid var(--paper)}
+.wa-bubble::after{content:"";position:absolute;left:-3px;bottom:-7px;width:10px;height:10px;background:var(--paper);clip-path:polygon(0 100%,30% 0,100% 40%)}
+.wa:hover .wa-dot{transform:rotate(-10deg) scale(1.06)}
+.wa:hover .wa-note{transform:rotate(0)}
+@media (max-width:560px){.wa{right:16px;bottom:16px}.wa-note{display:none}.wa-dot{width:58px;height:58px}}
