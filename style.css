@@ -213,3 +213,19 @@ h1,h2,h3,h4{font-family:var(--hand);font-weight:500;margin:0;line-height:1.15;te
 .wa:hover .wa-dot{transform:rotate(-10deg) scale(1.06)}
 .wa:hover .wa-note{transform:rotate(0)}
 @media (max-width:560px){.wa{right:16px;bottom:16px}.wa-note{display:none}.wa-dot{width:58px;height:58px}}
+
+/* ---------- tighter spacing on small screens ---------- */
+@media (max-width:560px){
+  .drawing{position:absolute!important;right:14px;top:-18px;margin:0!important;width:105px!important;opacity:.85!important}
+  .d-cups{top:-30px}
+  .about,.method,.voices{padding:64px 0}
+  .listen{padding:30px 0 56px}
+  .four{padding:30px 0 56px}
+  .four .grid{row-gap:44px}
+  .price{padding:72px 0 90px}
+  .clouds{margin-top:48px;gap:40px}
+  .scraps{margin-top:44px;gap:36px}
+}
+@media (max-width:860px) and (min-width:561px){
+  .method,.voices{padding:90px 0}
+}
