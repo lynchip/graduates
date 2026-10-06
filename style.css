@@ -1,4 +1,4 @@
-﻿/* Graduates - soft Miro one-page design */
+/* Graduates - soft Miro one-page design */
 :root{
   --paper:#F4EDDF;
   --ink:#1D1B18;
@@ -103,7 +103,7 @@ h1,h2,h3,h4{font-family:var(--hand);font-weight:500;margin:0;line-height:1.15;te
 .t4{grid-column:8 / span 5;margin-top:60px}
 
 /* ---------- about ---------- */
-.about{position:relative;padding:110px 0}
+.about{position:relative;padding:90px 0 30px}
 .kicker{font-family:var(--hand);font-size:18px;color:var(--red);display:inline-block;transform:rotate(-2deg);margin-bottom:14px}
 .about h2,.method h2,.voices h2,.price h2{font-size:clamp(38px,5vw,62px);max-width:16ch}
 .about .says{position:relative;margin:70px 0 0 auto;max-width:720px;font-family:var(--body);font-style:italic;font-size:clamp(23px,2.3vw,29px);line-height:1.55;font-weight:400}
@@ -218,7 +218,8 @@ h1,h2,h3,h4{font-family:var(--hand);font-weight:500;margin:0;line-height:1.15;te
 @media (max-width:560px){
   .drawing{position:absolute!important;right:14px;top:-18px;margin:0!important;width:105px!important;opacity:.85!important}
   .d-cups{top:-30px}
-  .about,.method,.voices{padding:64px 0}
+  .about{padding:54px 0 20px}
+  .method,.voices{padding:64px 0}
   .listen{padding:30px 0 56px}
   .four{padding:30px 0 56px}
   .four .grid{row-gap:44px}
@@ -237,9 +238,9 @@ h1,h2,h3,h4{font-family:var(--hand);font-weight:500;margin:0;line-height:1.15;te
   .four{padding:36px 0 64px}
   .four .grid{row-gap:50px}
   .t2{margin-top:60px}.t4{margin-top:40px}
-  .about,.method,.voices{padding:80px 0}
-  .about .says{margin-top:52px}
-  .about .bits{margin-top:56px}
+  .about{padding:70px 0 24px}
+  .method,.voices{padding:80px 0}
+  .about .says{margin-top:40px}
   .method .text{margin-top:34px}
   .clouds{margin-top:60px;gap:50px 80px}
   .cloud:nth-child(2),.cloud:nth-child(4){margin-top:40px}
