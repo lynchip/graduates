@@ -128,8 +128,8 @@ h1,h2,h3,h4{font-family:var(--hand);font-weight:500;margin:0;line-height:1.15;te
 .cloud ul{list-style:none;margin:0;padding:0;font-size:20px;line-height:1.9}
 .cloud li{display:inline}
 .cloud li:not(:last-child)::after{content:" · ";color:var(--soft);padding:0 .3em}
-.cloud:nth-child(2){margin-top:60px}
-.cloud:nth-child(4){margin-top:60px}
+.cloud:nth-child(2),.cloud:nth-child(4),.cloud:nth-child(6){margin-top:60px}
+
 
 /* ---------- voices ---------- */
 .voices{position:relative;padding:110px 0}
@@ -243,7 +243,7 @@ h1,h2,h3,h4{font-family:var(--hand);font-weight:500;margin:0;line-height:1.15;te
   .about .says{margin-top:40px}
   .method .text{margin-top:34px}
   .clouds{margin-top:60px;gap:50px 80px}
-  .cloud:nth-child(2),.cloud:nth-child(4){margin-top:40px}
+  .cloud:nth-child(2),.cloud:nth-child(4),.cloud:nth-child(6){margin-top:40px}
   .scraps{margin-top:52px;gap:44px 28px}
   .price{padding:84px 0 80px}
   .price-wrap{margin-top:48px}
@@ -276,3 +276,14 @@ h1,h2,h3,h4{font-family:var(--hand);font-weight:500;margin:0;line-height:1.15;te
 
 /* the free consultation as a visible invitation */
 .invite{font-family:var(--hand);font-size:clamp(21px,2.2vw,26px);line-height:1.45;margin:30px 0 0;max-width:30ch;text-wrap:balance}
+
+/* ---------- interactive goal pills ---------- */
+.pill-selector{margin:32px 0 16px;position:relative;z-index:2}
+.pill-label{font-family:var(--body);font-size:14px;font-weight:700;color:var(--soft);text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.pill-label span.hint{font-weight:400;text-transform:none;font-size:13px;color:var(--soft);font-style:italic}
+.pills{display:flex;flex-wrap:wrap;gap:12px}
+.pill{font-family:var(--body);font-size:16px;font-weight:700;padding:11px 22px;border-radius:999px;border:2px solid var(--ink);background:var(--paper);color:var(--ink);text-decoration:none;cursor:pointer;transition:all .2s ease;display:inline-flex;align-items:center;gap:10px;user-select:none}
+.pill:hover,.pill:focus-visible{background:var(--ink);color:var(--paper);transform:translateY(-2px);box-shadow:0 6px 18px rgba(29,27,24,.25)}
+.pill .dot{width:9px;height:9px;border-radius:50%;background:var(--yellow);transition:transform .2s ease;flex-shrink:0}
+.pill:hover .dot,.pill:focus-visible .dot{transform:scale(1.3)}
+

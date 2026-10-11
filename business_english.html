@@ -34,80 +34,6 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Business English specific interactive pills */
-    .pill-selector {
-      margin: 32px 0 16px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .pill-label {
-      font-family: var(--body);
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--soft);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .pill-label span.hint {
-      font-weight: 400;
-      text-transform: none;
-      font-size: 13px;
-      color: var(--soft);
-      font-style: italic;
-    }
-
-    .pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .pill {
-      font-family: var(--body);
-      font-size: 16px;
-      font-weight: 700;
-      padding: 11px 22px;
-      border-radius: 999px;
-      border: 2px solid var(--ink);
-      background: var(--paper);
-      color: var(--ink);
-      text-decoration: none;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      user-select: none;
-    }
-
-    .pill:hover,
-    .pill:focus-visible {
-      background: var(--ink);
-      color: var(--paper);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(29, 27, 24, 0.25);
-    }
-
-    .pill .dot {
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: var(--yellow);
-      transition: transform .2s ease;
-      flex-shrink: 0;
-    }
-
-    .pill:hover .dot,
-    .pill:focus-visible .dot {
-      transform: scale(1.3);
-    }
-
     /* Clean CTA without underline to prevent mobile line-wrapping issues */
     .hand-link {
       text-decoration: none;
@@ -130,17 +56,6 @@
 
       .hand-link .blob {
         margin-top: 4px;
-      }
-    }
-
-    /* Maintain staggered cloud grid for additional methodology cards */
-    .cloud:nth-child(6) {
-      margin-top: 60px;
-    }
-
-    @media (max-width: 860px) {
-      .cloud:nth-child(6) {
-        margin-top: 0;
       }
     }
   </style>
