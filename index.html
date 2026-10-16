@@ -33,6 +33,48 @@
         href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Shantell+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css?v=2">
+    <style>
+        .audio-cta {
+            margin-top: 16px;
+            font-family: var(--hand);
+            font-size: 19px;
+            opacity: 0.85;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .audio-cta.ready {
+            opacity: 1;
+            transform: translateX(4px);
+        }
+        .audio-cta a {
+            text-decoration: none;
+            color: var(--blue);
+            border-bottom: 2px solid var(--yellow);
+            padding-bottom: 2px;
+        }
+        .audio-cta a:hover {
+            color: var(--red);
+            border-bottom-color: var(--red);
+        }
+        @media (max-width: 560px) {
+            .hand-link {
+                font-size: 19px;
+                line-height: 1.35;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .hand-link .blob {
+                margin-top: 6px;
+            }
+            .wa-note {
+                display: block !important;
+                font-size: 15px;
+                padding: 8px 13px;
+            }
+            .wa-note small {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -58,10 +100,21 @@
                 <span class="s c hide-sm" style="width:16px;height:16px;background:var(--red);right:19%;top:380px"
                     aria-hidden="true"></span>
 
-                <span class="eyebrow">Aulas Individuais Online</span>
+                <span class="eyebrow">Aulas Individuais Online · Professor Nativo</span>
                 <h1>Fale Inglês com <span class="conf">Confiança</span></h1>
                 <p class="promise">Pronúncia clara e inglês prático — <span>para você ser entendido de verdade.</span>
                 </p>
+                <p class="lead">Para brasileiros de nível intermediário e avançado que querem destravar a fala no
+                    trabalho, em reuniões, entrevistas, viagens e conversas do dia a dia.</p>
+
+                <div class="go">
+                    <a href="https://wa.me/5511996005326?text=Ol%C3%A1%20Michael!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20a%20conversa%20gratuita."
+                        target="_blank" rel="noopener" class="hand-link"><span class="blob"></span><u>Agendar conversa
+                            gratuita no WhatsApp</u></a>
+                    <a href="#audio" class="hand-link blue"><span class="blob"></span><u>Ouvir minha voz (1 min)</u></a>
+                </div>
+                <p class="small-note">Começamos com um bate-papo gratuito de 40 minutos — sem provas, sem pressão e sem
+                    compromisso. E como falo português fluente, você fica 100% à vontade.</p>
             </div>
         </section>
 
@@ -77,7 +130,7 @@
                             aria-hidden="true"></span></button>
                     <div>
                         <h2>Ouça o professor</h2>
-                        <p>Clique abaixo para ouvir uma breve apresentação.</p>
+                        <p>Aperte o play para conhecer meu ritmo, sotaque e como funcionam nossas aulas.</p>
                         <div class="track" id="track" role="slider" aria-label="Progresso do áudio" aria-valuemin="0"
                             aria-valuemax="100" aria-valuenow="0" tabindex="0"><span class="head" id="head"></span>
                         </div>
@@ -86,6 +139,11 @@
                             <source src="audio/intro_sample.mp3" type="audio/mpeg">
                             Seu navegador não suporta o elemento de áudio.
                         </audio>
+                        <div class="audio-cta" id="audioCta">
+                            <a href="https://wa.me/5511996005326?text=Ol%C3%A1%20Michael!%20Ouvi%20sua%20apresenta%C3%A7%C3%A3o%20no%20site%20e%20gostaria%20de%20agendar%20a%20conversa%20gratuita."
+                                target="_blank" rel="noopener">Gostou do ritmo? Me chame no WhatsApp para conversarmos
+                                &rarr;</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,7 +163,34 @@
                         aria-hidden="true"></span>
                     “Com 26 anos de vivência no Brasil, ensino as habilidades específicas que os brasileiros precisam
                     para se comunicar em inglês com naturalidade e confiança.”
+                    <span class="who">— Michael, professor nativo em São Paulo</span>
                 </blockquote>
+
+                <div class="bits">
+                    <div class="bit">
+                        <span class="s c"
+                            style="width:32px;height:32px;background:var(--yellow);border:2.5px solid var(--ink)"
+                            aria-hidden="true"></span>
+                        <h4>Nativo + Fluente em Português</h4>
+                        <p>Entendo exatamente onde os brasileiros travam na pronúncia e na escuta — e explico tudo com
+                            clareza.</p>
+                    </div>
+                    <div class="bit">
+                        <span class="s c" style="width:32px;height:32px;background:var(--blue)"
+                            aria-hidden="true"></span>
+                        <h4>Ambiente Acolhedor e Sem Medo</h4>
+                        <p>Correção gentil, no seu ritmo. Você ganha segurança para falar, errar e evoluir sem
+                            julgamentos.</p>
+                    </div>
+                    <div class="bit">
+                        <span class="s star" style="width:32px;height:32px" aria-hidden="true">
+                            <i></i><i></i><i></i><i></i>
+                        </span>
+                        <h4>Vivência Real + Certificação TEFL</h4>
+                        <p>Décadas de experiência em negócios e comunicação real, aliadas à formação para ensinar inglês.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -114,23 +199,27 @@
             <div class="canvas">
                 <span class="kicker">Metodologia</span>
                 <h2 class="ask">O foco é a comunicação</h2>
-                <p class="text">O objetivo é simples: ser entendido e entender os nativos com clareza. A proposta
-                    é que, já no primeiro mês, você perceba seu progresso e se sinta no caminho certo para se comunicar
-                    em inglês.</p>
+                <p class="text">O objetivo é simples: ser entendido e entender os nativos com clareza. Começamos com
+                    temas e situações reais do seu interesse e trabalhamos exatamente o que faz diferença na sua fala.
+                    Já no primeiro mês, você sente seu progresso.</p>
 
                 <div class="clouds">
                     <section class="cloud" aria-labelledby="p1">
                         <h3 id="p1"><span class="mk" style="background:var(--red)"></span>Público Indicado</h3>
                         <ul>
                             <li>Níveis Intermediário (B1/B2) e Avançado (C1/C2)</li>
-                            <li>Comunicação de verdade é ter a confiança para expressar suas ideias e entender os outros — independentemente do seu sotaque.</li>
+                            <li>Quem já tem uma base, mas trava na hora de falar ou entender nativos</li>
+                            <li>Quem busca confiança — independentemente do sotaque</li>
                         </ul>
                     </section>
                     <section class="cloud" aria-labelledby="p2">
                         <h3 id="p2"><span class="mk" style="background:var(--blue)"></span>Habilidades Desenvolvidas
                         </h3>
                         <ul>
-                            <li>A comunicação em inglês é um conjunto de habilidades que você pode dominar. Praticar com consistência é o que vai te levar ao seu objetivo.</li>
+                            <li>Pronúncia clara e ritmo natural</li>
+                            <li>Compreensão auditiva (entender sem legendas)</li>
+                            <li>Conversação fluida e espontânea</li>
+                            <li>Vocabulário prático para expressar suas ideias</li>
                         </ul>
                     </section>
                     <section class="cloud" aria-labelledby="p3">
@@ -138,24 +227,27 @@
                                 style="background:var(--yellow);border:2.5px solid var(--ink)"></span>Situações de Uso
                         </h3>
                         <ul>
-                            <li>Toda situação em que você usa inglês é importante. Prepare-se e esteja pronto.</li>
+                            <li>Reuniões, apresentações e chamadas no trabalho</li>
+                            <li>Entrevistas de emprego em inglês</li>
+                            <li>Viagens internacionais sem perrengue</li>
+                            <li>Conversas naturais do dia a dia e e-mails</li>
                         </ul>
                     </section>
                     <section class="cloud" aria-labelledby="p4">
-                        <h3 id="p4"><span class="mk" style="background:var(--green)"></span>O Diferencial das aulas
-                            particulares</h3>
+                        <h3 id="p4"><span class="mk" style="background:var(--green)"></span>O Diferencial das Aulas
+                            Particulares</h3>
                         <ul>
-                            <li>O segredo para evoluir é ouvir a sua própria voz falando inglês o máximo possível. E
-                                aqui o palco é 100% seu — sem disputa pelo microfone.</li>
+                            <li>O segredo para evoluir é ouvir a sua própria voz falando inglês o máximo possível</li>
+                            <li>Aqui o palco é 100% seu — sem disputa pelo microfone</li>
                         </ul>
                     </section>
                     <section class="cloud" aria-labelledby="p5">
                         <h3 id="p5"><span class="mk" style="background:var(--blue)"></span>O Que Você Nota Primeiro
                         </h3>
                         <ul>
-                            <li>As pessoas param de pedir para você repetir.</li>
-                            <li>Você entende mais do que antes.</li>
-                            <li>Você expressa suas ideias com mais clareza e precisão.</li>
+                            <li>As pessoas param de pedir para você repetir</li>
+                            <li>Você entende mais do que antes</li>
+                            <li>Você expressa suas ideias com mais clareza e precisão</li>
                         </ul>
                     </section>
                     <section class="cloud" aria-labelledby="p6">
@@ -163,12 +255,12 @@
                         </h3>
                         <ul>
                             <li>É essencial abraçar o que faz o inglês ser inglês!</li>
-                            <li>O português tem seu próprio ritmo, sons e música — é lindo, mas é diferente.</li>
+                            <li>O português tem seu próprio ritmo, sons e música — é lindo, mas é diferente</li>
                         </ul>
                     </section>
                 </div>
                 <div class="go" style="margin-top:52px">
-                    <a href="https://wa.me/5511996005326?text=Ol%C3%A1%20Michael!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20a%20consulta%20gratuita."
+                    <a href="https://wa.me/5511996005326?text=Ol%C3%A1%20Michael!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20a%20conversa%20gratuita."
                         target="_blank" rel="noopener" class="hand-link"><span class="blob"></span><u>Agendar conversa
                             inicial gratuita no WhatsApp</u></a>
                 </div>
@@ -240,38 +332,40 @@
                             <span>50 minutos de aula individual</span><i style="background:var(--red)"></i>
                             <span>Foco 100% nos seus desafios</span><i style="background:var(--blue)"></i>
                             <span>Aulas pelo Google Meet</span><i style="background:var(--yellow)"></i>
-                            <span>Pagamento via PIX</span>
+                            <span>Pagamento via PIX</span><i style="background:var(--green)"></i>
+                            <span>Sem pacotes ou multas</span>
                         </p>
                         <p class="invite">Consulta gratuita de 40 minutos: conversamos sobre seus objetivos e dúvidas,
                             com um bate-papo informal em inglês — sem compromisso. E se depois sentir que não é o que
                             procura? É simples: não precisa agendar outra aula.</p>
 
-                        <!-- 3-Pill Objective Direct WhatsApp Links -->
+                        <!-- Objective Direct WhatsApp Links -->
                         <div class="pill-selector">
                             <div class="pill-label">
-                                Seu foco principal no momento: <span class="hint">(toque para falar no WhatsApp)</span>
+                                Qual é o seu foco principal? <span class="hint">(toque para agendar sua conversa gratuita
+                                    no WhatsApp)</span>
                             </div>
                             <div class="pills" role="navigation"
                                 aria-label="Escolha seu objetivo para iniciar a conversa">
                                 <a class="pill"
-                                    href="https://wa.me/5511996005326?text=Ol%C3%A1%20Michael!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20a%20conversa%20gratuita.%20Meu%20foco%20principal%20%C3%A9%20Meetings."
+                                    href="https://wa.me/5511996005326?text=Ol%C3%A1%20Michael!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20a%20conversa%20gratuita.%20Quero%20falar%20com%20mais%20confian%C3%A7a%20e%20destravar%20a%20conversa%C3%A7%C3%A3o."
                                     target="_blank" rel="noopener">
-                                    <span class="dot" aria-hidden="true"></span>Meetings
+                                    <span class="dot" aria-hidden="true"></span>Conversação &amp; Confiança
                                 </a>
                                 <a class="pill"
-                                    href="https://wa.me/5511996005326?text=Ol%C3%A1%20Michael!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20a%20conversa%20gratuita.%20Meu%20foco%20principal%20%C3%A9%20Presentations."
+                                    href="https://wa.me/5511996005326?text=Ol%C3%A1%20Michael!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20a%20conversa%20gratuita.%20Meu%20foco%20%C3%A9%20ingl%C3%AAs%20para%20o%20trabalho%20e%20reuni%C3%B5es."
                                     target="_blank" rel="noopener">
-                                    <span class="dot" aria-hidden="true"></span>Presentations
+                                    <span class="dot" aria-hidden="true"></span>Trabalho &amp; Reuniões
                                 </a>
                                 <a class="pill"
-                                    href="https://wa.me/5511996005326?text=Ol%C3%A1%20Michael!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20a%20conversa%20gratuita.%20Meu%20foco%20%C3%A9%20Emails."
+                                    href="https://wa.me/5511996005326?text=Ol%C3%A1%20Michael!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20a%20conversa%20gratuita.%20Estou%20me%20preparando%20para%20entrevistas%20em%20ingl%C3%AAs."
                                     target="_blank" rel="noopener">
-                                    <span class="dot" aria-hidden="true"></span>Emails
+                                    <span class="dot" aria-hidden="true"></span>Entrevistas
                                 </a>
                                 <a class="pill"
-                                    href="https://wa.me/5511996005326?text=Ol%C3%A1%20Michael!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20a%20conversa%20gratuita.%20Meu%20foco%20%C3%A9%20Conversa%20Geral."
+                                    href="https://wa.me/5511996005326?text=Ol%C3%A1%20Michael!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20a%20conversa%20gratuita.%20Meu%20foco%20%C3%A9%20viagens%20e%20ingl%C3%AAs%20para%20o%20dia%20a%20dia."
                                     target="_blank" rel="noopener">
-                                    <span class="dot" aria-hidden="true"></span>Conversa Geral
+                                    <span class="dot" aria-hidden="true"></span>Viagens &amp; Dia a Dia
                                 </a>
                             </div>
                         </div>
@@ -299,11 +393,13 @@
     <script>
         (function () {
             const a = document.getElementById('audio-el'), btn = document.getElementById('playBtn'),
-                track = document.getElementById('track'), head = document.getElementById('head'), time = document.getElementById('time');
+                track = document.getElementById('track'), head = document.getElementById('head'), time = document.getElementById('time'),
+                audioCta = document.getElementById('audioCta');
             const fmt = s => isFinite(s) ? Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0') : '0:00';
             btn.addEventListener('click', () => { a.paused ? a.play().catch(() => { }) : a.pause() });
             a.addEventListener('play', () => { btn.classList.add('on'); btn.setAttribute('aria-label', 'Pausar') });
             a.addEventListener('pause', () => { btn.classList.remove('on'); btn.setAttribute('aria-label', 'Tocar apresentação') });
+            a.addEventListener('ended', () => { if (audioCta) audioCta.classList.add('ready') });
             a.addEventListener('loadedmetadata', () => time.textContent = '0:00 / ' + fmt(a.duration));
             a.addEventListener('timeupdate', () => {
                 const p = a.duration ? a.currentTime / a.duration * 100 : 0;
